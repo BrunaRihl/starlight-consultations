@@ -6,4 +6,4 @@ def page_index(request):
     """
     Renders the about page.
     """
-    return render(request, "pages/index.html")
+    return render(request, "website/index.html")
