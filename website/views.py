@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 # Create your views here.
-def my_website(request):
-    return HttpResponse("Hello, world!")
+def page_index(request):
+    """
+    Renders the about page.
+    """
+    return render(request, "pages/index.html")
