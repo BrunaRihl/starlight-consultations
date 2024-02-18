@@ -40,6 +40,15 @@
               <li class="nav-item">
                 <a class="nav-link {% if request.path == logout_url %}{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-label="booking" href="{% url 'booking' %}">Booking</a>
+        
+              </li>
+              {% if user.is_superuser %}
+              <li class="nav-item">
+                <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa-solid fa-unlock"></i></a>
+              </li>
+              {% endif %}
             {% else %}
               <li class="nav-item">
                 <a class="nav-link {% if request.path == signup_url %}{% endif %}" aria-current="page" href="{% url 'account_signup' %}">Register</a>
@@ -55,6 +64,12 @@
     </nav>
 
     <main class="flex-shrink-0 main-bg">
+      {% if user.is_authenticated %}
+        <p class="text-end m-3">You are logged in as {{ user }}</p>
+      {% else %}
+        <p class="text-end m-3">You are not logged in</p>
+      {% endif %}
+
       {% block content %}
         <!-- Content Goes here -->
       {% endblock %}

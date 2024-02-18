@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 # Create your views here.
-def my_booking(request):
-    return HttpResponse("Hello, Booking!")
+def page_booking(request):
+    """
+    Renders the about page.
+    """
+    return render(request, "booking.html")
