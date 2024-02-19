@@ -3,10 +3,11 @@ from booking.models import Booking
 from service.models import Service
 
 TIME_OPTIONS = [(f"{hour}:00", f"{hour}:00") for hour in range(9, 18)]
-SERVICE_OPTIONS = Service.objects.all()
+SERVICE_OPTIONS = [(service.id, service.name) for service in Service.objects.all()]
+
 
 class BookingForm(forms.ModelForm):
-    services = forms.ChoiceField(
+    service = forms.ChoiceField(
         required=True,
         choices=SERVICE_OPTIONS,
         widget=forms.Select(attrs={"class": "form-control"}),
@@ -44,3 +45,11 @@ class BookingForm(forms.ModelForm):
         widgets = {
             "user": forms.HiddenInput(), 
         }
+
+    def clean_service(self):
+        service_id = self.cleaned_data['service']
+        try:
+            service = Service.objects.get(pk=service_id)
+            return service
+        except Service.DoesNotExist:
+            raise forms.ValidationError("Serviço selecionado não existe.")
