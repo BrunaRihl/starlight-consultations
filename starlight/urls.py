@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#from booking.views import page_booking
+from booking.views import page_booking
 
 
 
@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
     path("", include("website.urls"), name="website-urls"),
-    #path('booking/', page_booking, name='booking'),
+    path('booking/', page_booking, name='booking'),
     path("accounts/", include("allauth.urls")),
 
 ]
