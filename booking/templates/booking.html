@@ -4,10 +4,7 @@
 {% block content %}
 <section class="">
     <h2 class="">Find Your Way</h2>
-    <div class="">
-      <p>
-        Conteudo da pagina do booking!!
-      </p>
-    </div>
+    {% csrf_token %}
+    {% html_form %}
 </section>
 {% endblock content %}
