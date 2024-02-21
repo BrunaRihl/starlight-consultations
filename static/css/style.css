@@ -26,10 +26,14 @@ h2{
 .nav-color{
     background-color: #eeaef6;
 }
+
 .purple-first {
     color: #a80bb0;
 }
 
+.hero-image{
+    max-height: 500px;
+}
 .thin {
     font-weight: 300;
 }
