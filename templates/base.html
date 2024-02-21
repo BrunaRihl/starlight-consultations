@@ -6,32 +6,38 @@
 {% url 'account_logout' as logout_url %}
 {% url 'about' as about_url %}
 
-
 <!DOCTYPE html>
 <html class="h-100" lang="en">
   <head>
     <title>Starlight Consultations</title>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Bruna Rihl" />
+    <meta name="keywords" content="starlight, starlight-consultations, esoteric-consultations, tarot, runes, birth-chart, online" />
+    <meta name="description" content="Online esoteric consultations Starlight" />
 
     <!-- Google Fonts CSS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mystery+Quest&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light nav-color">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'index' %}"><span class="brand">S<span class="red-o">t</span>ar<span class="thin">|Light</span></span></a>
+        <a class="navbar-brand" href="{% url 'index' %}"><span class="brand-first purple-first">S</span><span class="brand">tar</span><span class="brand-first purple-first">L<span class="brand">ight</span></span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -39,13 +45,8 @@
               <a class="nav-link {% if request.path == index_url %}{% endif %}" aria-current="page" href="{% url 'index' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link
-                {% if request.path == about_url %}active{%endif%}"
-                aria-current="page"
-                href="{% url 'about' %}"
-                >About</a
-              >
+              <a class="nav-link
+                {% if request.path == about_url %}{% endif %}" aria-current="page" href="{% url 'about' %}">About</a>
             </li>
             {% if user.is_authenticated %}
               <li class="nav-item">
@@ -53,12 +54,11 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-label="booking" href="{% url 'booking' %}">Booking</a>
-        
               </li>
               {% if user.is_superuser %}
-              <li class="nav-item">
-                <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa-solid fa-unlock"></i></a>
-              </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa-solid fa-unlock"></i></a>
+                </li>
               {% endif %}
             {% else %}
               <li class="nav-item">
@@ -69,7 +69,6 @@
               </li>
             {% endif %}
           </ul>
-          <span class="navbar-text text-muted">Bruna Rihl</span>
         </div>
       </div>
     </nav>

@@ -1,16 +1,33 @@
 body {
     background-color: #F9FAFC;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+  
 }
 
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
+h2{
+    font-size: 130%;
+}
+
+.brand-first {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 600;
+    font-size: 2.4rem;
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
+.brand {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: #4A4A4F;
+}
+
+.nav-color{
+    background-color: #eeaef6;
+}
+.purple-first {
+    color: #a80bb0;
 }
 
 .thin {
@@ -27,6 +44,10 @@ body {
 
 .main-bg {
     background-color: #F9FAFC;
+}
+
+.div-color{
+    background-color: rgb(219, 171, 219) !important;
 }
 
 .card {
@@ -91,24 +112,14 @@ body {
     z-index: 100;
 }
 
+
+.profile-image {
+    width: 75%;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
 }
 
 .btn-signup,
@@ -132,12 +143,6 @@ body {
 .link:active {
     color: #445261;
     text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
 }
 
 .btn-delete {
