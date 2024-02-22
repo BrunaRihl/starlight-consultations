@@ -81,24 +81,21 @@ h2{
 }
 
 
-.scale {
-    width: 100%;
-    height: auto;
-}
-
-
 .profile-image {
     width: 75%;
 }
 
 .btn-signup,
-.btn-edit {
+.btn-edit,
+.btn-book {
     background-color: #a80bb0;
     color: #fff;
 }
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+.btn-book:hover,
+.btn-btn-book:active {
     background-color: #fff;
     color: #a80bb0;
 }

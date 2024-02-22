@@ -13,10 +13,16 @@
     </div>
     <div class="row">
         <div class="col text-right">
-          <!-- Updated on field goes in here -->
-    
-          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+            <!-- Book now button -->
+            <div class="text-end">
+                <button type="button" class="btn btn-secondary btn-lg btn-book">Book Now!</button>
+            </div>  
+            <!-- Updated on field goes in here -->
+            <br>
+            <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+
         </div>
-      </div>    
+      </div>
 </div>
+
 {% endblock content %}
