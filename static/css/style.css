@@ -25,7 +25,7 @@ h2{
 }
 
 .light-purple-bg{
-    background-color: #eeaef6;
+    background-color: #f8cbfe;
 }
 
 .purple-first {
@@ -49,6 +49,19 @@ h2{
 
 .copyright{
     font-size: 80%;
+}
+
+.margin-top-div{
+    margin-top: 40px !important;
+}
+
+.margin-bottom-div{
+    margin-bottom: 20px !important;
+}
+
+.icon-image{
+    font-size: 800%;
+    color:#eeaef6;
 }
 
 .thin {
