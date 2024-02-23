@@ -9,7 +9,7 @@
           <form method="post" action="{% url 'booking' %}" class="mb-3"> 
               {% csrf_token %}
               {{ html_form.as_p }}
-              <button type="submit" class="btn btn-primary">Save</button> 
+              <button type="submit" class="btn btn-primary btn-save">Save</button> 
           </form>
       </div>
   </div>
@@ -37,8 +37,8 @@
               <td>@mdo</td>
               <td>
                 <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-primary" aria-label="Edit"><i class="far fa-edit"></i></button>
-                  <button type="button" class="btn btn-secondary" aria-label="Delete"><i class="far fa-trash-alt"></i></button>
+                  <button type="button" class="btn btn-primary btn-edit" aria-label="Edit"><i class="far fa-edit"></i></button>
+                  <button type="button" class="btn btn-secondary btn-delete" aria-label="Delete"><i class="far fa-trash-alt"></i></button>
                 </div>
               </td>
             </tr>
