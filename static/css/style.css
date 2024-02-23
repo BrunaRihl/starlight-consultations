@@ -85,12 +85,14 @@ h2{
     width: 75%;
 }
 
+
 .btn-signup,
 .btn-edit,
 .btn-book {
     background-color: #a80bb0;
     color: #fff;
 }
+
 
 .btn-signup:hover,
 .btn-signup:active,
@@ -99,6 +101,7 @@ h2{
     background-color: #fff;
     color: #a80bb0;
 }
+
 
 .link {
     color: #a80bb0;
@@ -126,3 +129,11 @@ h2{
 .faded {
     color: rgb(172, 175, 175);
 }
+
+/* Estilos adicionais para telas menores */
+@media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+  }
+  
