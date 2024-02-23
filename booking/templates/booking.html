@@ -2,39 +2,50 @@
 
 
 {% block content %}
-<section class="">
-    <h2 class="">booking content</h2>
-    <form method="post" action="{% url 'booking' %}">
-    {% csrf_token %}
-    {{ html_form.as_p }}
-    <button type="submit">Save</button>
-    </form>
-    <h2 class="">Next Bookings</h2>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Service</th>
-            <th scope="col">Date</th>
-            <th scope="col">Time</th>
-            <th scope="col">Message</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td><div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary">Edit</button>
-                <button type="button" class="btn btn-secondary">Delete</button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<section class="container"> 
+  <h2 class="">Booking Content</h2>
+  <div class="row justify-content-center"> 
+      <div class="col-md-6"> 
+          <form method="post" action="{% url 'booking' %}" class="mb-3"> 
+              {% csrf_token %}
+              {{ html_form.as_p }}
+              <button type="submit" class="btn btn-primary">Save</button> 
+          </form>
+      </div>
+  </div>
+</section>
+<section class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-12">
+      <h2 class="text-center">Next Bookings</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Service</th>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-primary" aria-label="Edit"><i class="far fa-edit"></i></button>
+                  <button type="button" class="btn btn-secondary" aria-label="Delete"><i class="far fa-trash-alt"></i></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </section>
 {% endblock content %}
