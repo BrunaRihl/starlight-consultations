@@ -38,6 +38,7 @@
               <td>{{ booking.booking_time }}</td>
               <td>
                 <a href="{% url 'edit_booking' booking_id=booking.id %}" class="text-dark">edit</a>
+                <a href="{% url 'delete_booking' booking_id=booking.id %}" class="text-dark">delete</a>
               </td>
             </tr>
             {% endfor %}

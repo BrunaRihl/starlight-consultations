@@ -7,6 +7,15 @@ SERVICE_OPTIONS = [(service.id, service.name) for service in Service.objects.all
 
 
 class BookingForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        readonly = kwargs.pop('readonly', False)
+        super(BookingForm, self).__init__(*args, **kwargs)
+        if readonly:
+            for field_name in self.fields:
+                self.fields[field_name].widget.attrs['readonly'] = True
+                self.fields[field_name].widget.attrs['disabled'] = True
+
+
     service = forms.ChoiceField(
         required=True,
         choices=SERVICE_OPTIONS,

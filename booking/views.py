@@ -49,3 +49,23 @@ def edit_booking(request, booking_id):
         {"html_form": form, 
          "booking_id": booking_id},
     )
+
+
+@login_required
+def delete_booking(request, booking_id):
+    """
+    For deleting booking
+    """
+    # Recupera a instância da reserva
+    booking = get_object_or_404(Booking, pk=booking_id, user=request.user)
+
+    if request.method == 'POST':
+        # Remove a reserva
+        booking.delete()
+        # Redireciona para algum lugar apropriado após a remoção
+        return redirect('create_booking')
+
+    # Carrega o formulário preenchido com os dados da reserva
+    form = BookingForm(instance=booking, readonly=True)
+
+    return render(request, 'delete_booking.html', {'form': form, 'booking_id': booking_id})
