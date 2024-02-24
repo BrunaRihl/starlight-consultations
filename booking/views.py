@@ -1,7 +1,10 @@
-from django.shortcuts import render, redirect
+import datetime
+
+from django.shortcuts import render, get_object_or_404, redirect
 from booking.forms import BookingForm
 from django.contrib.auth.decorators import login_required
-import datetime
+
+from .models import Booking
 
 # Create your views here.
 @login_required
@@ -14,7 +17,9 @@ def create_booking(request):
             return redirect('index')  
     else:
         form = BookingForm(initial={'booking_date': datetime.date.today()})
-    return render(request, 'booking.html', {'html_form': form})
+
+    list_bookings = Booking.objects.filter(user=request.user)
+    return render(request, 'booking.html', {'html_form': form, 'html_list': list_bookings})
 
 @login_required
 def edit_booking(request):

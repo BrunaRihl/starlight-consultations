@@ -30,11 +30,12 @@
             </tr>
           </thead>
           <tbody>
+            {% for booking in html_list %}
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>{{ booking.service.name }}</td>
+              <td>{{ booking.booking_date }}</td>
+              <td>{{ booking.booking_time }}</td>
               <td>
                 <div class="btn-group" role="group">
                   <form method="post" action="{% url 'edit_booking' %}" class="mb-3"> 
@@ -46,6 +47,7 @@
                   </div>
               </td>
             </tr>
+            {% endfor %}
           </tbody>
         </table>
       </div>
