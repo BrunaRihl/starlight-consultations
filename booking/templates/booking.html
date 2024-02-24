@@ -37,14 +37,7 @@
               <td>{{ booking.booking_date }}</td>
               <td>{{ booking.booking_time }}</td>
               <td>
-                <div class="btn-group" role="group">
-                  <form method="post" action="{% url 'edit_booking' %}" class="mb-3"> 
-                    <button type="button" class="btn btn-primary btn-edit" aria-label="Edit"><i class="far fa-edit"></i></button>
-                  </form>
-                  <form method="post" action="{% url 'delete_booking' %}" class="mb-3">
-                    <button type="button" class="btn btn-secondary btn-delete" aria-label="Delete"><i class="far fa-trash-alt"></i></button>
-                  </form>
-                  </div>
+                <a href="{% url 'edit_booking' booking_id=booking.id %}" class="text-dark">edit</a>
               </td>
             </tr>
             {% endfor %}
