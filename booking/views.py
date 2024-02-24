@@ -15,7 +15,8 @@ def create_booking(request):
         if form.is_valid():
             form.instance.user = request.user
             form.save()  
-            return redirect('index')  
+            messages.success(request, "Booking saved successful")
+            return redirect('create_booking')  
     else:
         form = BookingForm(initial={'booking_date': datetime.date.today()})
 
