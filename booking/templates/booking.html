@@ -32,7 +32,7 @@
           <tbody>
             {% for booking in html_list %}
             <tr>
-              <th scope="row">1</th>
+              <th scope="row">{{ booking.id }}</th>
               <td>{{ booking.service.name }}</td>
               <td>{{ booking.booking_date }}</td>
               <td>{{ booking.booking_time }}</td>
