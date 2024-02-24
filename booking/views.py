@@ -62,6 +62,8 @@ def delete_booking(request, booking_id):
     if request.method == 'POST':
         # Remove a reserva
         booking.delete()
+        # success message
+        messages.success(request, "Booking deleted successful")
         # Redireciona para algum lugar apropriado após a remoção
         return redirect('create_booking')
 
