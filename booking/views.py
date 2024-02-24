@@ -16,3 +16,10 @@ def create_booking(request):
         form = BookingForm(initial={'booking_date': datetime.date.today()})
     return render(request, 'booking.html', {'html_form': form})
 
+@login_required
+def edit_booking(request):
+    return redirect('index') 
+
+@login_required
+def delete_booking(request):
+    return redirect('index') 

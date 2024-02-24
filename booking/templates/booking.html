@@ -37,9 +37,13 @@
               <td>@mdo</td>
               <td>
                 <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-primary btn-edit" aria-label="Edit"><i class="far fa-edit"></i></button>
-                  <button type="button" class="btn btn-secondary btn-delete" aria-label="Delete"><i class="far fa-trash-alt"></i></button>
-                </div>
+                  <form method="post" action="{% url 'edit_booking' %}" class="mb-3"> 
+                    <button type="button" class="btn btn-primary btn-edit" aria-label="Edit"><i class="far fa-edit"></i></button>
+                  </form>
+                  <form method="post" action="{% url 'delete_booking' %}" class="mb-3">
+                    <button type="button" class="btn btn-secondary btn-delete" aria-label="Delete"><i class="far fa-trash-alt"></i></button>
+                  </form>
+                  </div>
               </td>
             </tr>
           </tbody>
