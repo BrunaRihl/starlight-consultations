@@ -10,6 +10,11 @@ h2{
     font-size: 130%;
 }
 
+.errorlist {
+    color: red;
+}
+
+
 .brand-first {
     font-family: "Mystery Quest", system-ui;
     font-weight: 600;
