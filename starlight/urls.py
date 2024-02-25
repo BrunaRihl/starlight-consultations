@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from booking.views import create_booking
 
-
+from website.views import error_404 
+handler404 = error_404
 
 urlpatterns = [
     path("about/", include("about.urls"), name="about-urls"),

@@ -1,6 +1,9 @@
+from datetime import datetime
 from django import forms
 from booking.models import Booking
 from service.models import Service
+from django.core.exceptions import ValidationError
+
 
 TIME_OPTIONS = [(f"{hour}:00", f"{hour}:00") for hour in range(9, 18)]
 SERVICE_OPTIONS = [(service.id, service.name) for service in Service.objects.all()]
@@ -61,4 +64,33 @@ class BookingForm(forms.ModelForm):
             service = Service.objects.get(pk=service_id)
             return service
         except Service.DoesNotExist:
-            raise forms.ValidationError("Serviço selecionado não existe.")
+            raise forms.ValidationError("Selected service not valid.")
+        
+
+
+    def clean(self):
+        """
+        Cleans and validates the input data.
+
+        Checks if the booking date and time are valid,
+        and ensures that the tutor is available.
+        """
+        current_date = datetime.now().date()
+        current_time = datetime.now().time()
+
+        cleaned_data = super().clean()
+        booking_date = cleaned_data.get("booking_date")
+        booking_time = datetime.strptime(
+            cleaned_data.get("booking_time"), "%H:%M"
+        ).time()
+
+        if booking_date <= current_date and booking_time <= current_time:
+            raise ValidationError("Booking should be greather than today")
+
+        if Booking.objects.filter(
+            booking_date=booking_date,
+            booking_time=cleaned_data.get("booking_time"),
+        ).exists():
+            raise ValidationError("Consultant is not available this day.")
+
+    
