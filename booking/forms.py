@@ -18,20 +18,17 @@ class BookingForm(forms.ModelForm):
                 self.fields[field_name].widget.attrs['readonly'] = True
                 self.fields[field_name].widget.attrs['disabled'] = True
 
-
     service = forms.ChoiceField(
         required=True,
         choices=SERVICE_OPTIONS,
         widget=forms.Select(attrs={"class": "form-control"}),
     )
 
-
     booking_time = forms.ChoiceField(
         required=True,
         choices=TIME_OPTIONS,
         widget=forms.Select(attrs={"class": "form-control"}),
     )
-
 
     booking_date = forms.DateField(
         required=True,
@@ -70,10 +67,6 @@ class BookingForm(forms.ModelForm):
 
     def clean(self):
         """
-        Cleans and validates the input data.
-
-        Checks if the booking date and time are valid,
-        and ensures that the tutor is available.
         """
         current_date = datetime.now().date()
         current_time = datetime.now().time()
@@ -85,12 +78,12 @@ class BookingForm(forms.ModelForm):
         ).time()
 
         if booking_date <= current_date and booking_time <= current_time:
-            raise ValidationError("Booking should be greather than today")
+            raise ValidationError("Please select a valid date for the booking, which should be later than today.")
 
         if Booking.objects.filter(
             booking_date=booking_date,
             booking_time=cleaned_data.get("booking_time"),
         ).exists():
-            raise ValidationError("Consultant is not available this day.")
+            raise ValidationError("Consultant is not available on this day/time.")
 
     
