@@ -38,8 +38,8 @@
               <td>{{ booking.booking_date }}</td>
               <td>{{ booking.booking_time }}</td>
               <td>
-                <a href="{% url 'edit_booking' booking_id=booking.id %}"  class="btn btn-primary">edit</a>
-                <a href="{% url 'delete_booking' booking_id=booking.id %}"  class="btn btn-secondary">delete</a>
+                <a href="{% url 'edit_booking' booking_id=booking.id %}"  class="btn btn-primary btn-edit"><i class="far fa-edit" aria-label="edit"></i></a>
+                <a href="{% url 'delete_booking' booking_id=booking.id %}"  class="btn btn-secondary btn-delete"><i class="far fa-trash-alt" aria-label="delete"></i></a>
               </td>
             </tr>
             {% endfor %}

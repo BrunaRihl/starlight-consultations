@@ -11,7 +11,14 @@ h2{
 }
 
 .errorlist {
-    color: red;
+    border-width: 1px;
+    border-style: double;
+    background-color: #ece3e3;
+    border-color: #c34141;
+    list-style-type: none;
+    font-weight: 400;
+    border-radius: 5px;
+
 }
 
 
@@ -113,17 +120,17 @@ h2{
 
 
 .btn-edit {
-    background-color: #6c5f6c;
+    background-color: #8c778c;
     color: #fff;
-    border-color:#6c5f6c;
+    border-color:#8c778c;
 
 }
 
 .btn-edit:hover,
 .btn-edit:active {
     background-color: #fff;
-    color: #6c5f6c;
-    border-color:#6c5f6c;
+    color: #8c778c;
+    border-color:#8c778c;
 }
 
 .btn-delete {
@@ -152,14 +159,11 @@ h2{
 }
 
 
-.faded {
-    color: rgb(172, 175, 175);
-}
 
-/* Estilos adicionais para telas menores */
+/* "Additional styles for smaller screens */
 @media (max-width: 768px) {
     .table th, .table td {
-      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+      font-size: 14px; 
     }
   }
   
