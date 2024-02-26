@@ -2,25 +2,27 @@ body {
     background-color: #F9FAFC;
     padding-top: 80px;
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 300;
-  
+    font-weight: 400;
 }
 
 h2{
     font-size: 130%;
 }
 
-.errorlist {
-    border-width: 1px;
-    border-style: double;
-    background-color: #ece3e3;
-    border-color: #c34141;
-    list-style-type: none;
-    font-weight: 400;
-    border-radius: 5px;
-
+.main-bg {
+    background-color: #F9FAFC;
 }
 
+.margin-top-div{
+    margin-top: 50px !important;
+}
+
+.margin-bottom-div{
+    margin-bottom: 20px !important;
+}
+
+
+/*-- nav style --*/
 
 .brand-first {
     font-family: "Mystery Quest", system-ui;
@@ -31,7 +33,7 @@ h2{
 
 .brand {
     font-family: "Mystery Quest", system-ui;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.4rem;
     color: #4A4A4F;
 }
@@ -43,6 +45,8 @@ h2{
 .purple-first {
     color: #a80bb0;
 }
+
+/*-- hero style --*/
 
 .hero-image img {
     width: 100%;
@@ -59,43 +63,21 @@ h2{
     color: white;
 }
 
-.copyright{
-    font-size: 80%;
-}
-
-.margin-top-div{
-    margin-top: 50px !important;
-}
-
-.margin-bottom-div{
-    margin-bottom: 20px !important;
-}
+/*-- team section --*/
 
 .icon-image{
     font-size: 800%;
     color:#eeaef6;
 }
 
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
-}
-
+/*-- about page --*/
 
 .profile-image {
     width: 75%;
 }
+
+
+/*-- buttons styles --*/
 
 .btn-save,
 .btn-signup,
@@ -146,11 +128,12 @@ h2{
     border-color:#bb370b;
 }
 
+/*-- login/logout page --*/
+
 .link {
     color: #a80bb0;
     text-decoration: none;
 }
-
 
 .link:hover,
 .link:active {
@@ -160,7 +143,7 @@ h2{
 
 
 
-/* "Additional styles for smaller screens */
+/* Additional styles for smaller screens */
 @media (max-width: 768px) {
     .table th, .table td {
       font-size: 14px; 
