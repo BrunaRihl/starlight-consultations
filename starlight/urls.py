@@ -20,11 +20,11 @@ from website.views import error_404
 handler404 = error_404
 
 urlpatterns = [
-    path("about/", include("about.urls"), name="about-urls"),
+    path('about/', include('about.urls'), name='about-urls'),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path("", include("website.urls"), name="website-urls"),
-    path('booking/', include("booking.urls")),
-    path("accounts/", include("allauth.urls")),
+    path("", include('website.urls'), name='website-urls'),
+    path('booking/', include('booking.urls')),
+    path('accounts/', include('allauth.urls')),
 
 ]

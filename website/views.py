@@ -7,6 +7,6 @@ def error_404(request, exception):
 # Create your views here.
 def page_index(request):
     """
-    Renders the about page.
+    Renders the index page.
     """
     return render(request, "index.html")
