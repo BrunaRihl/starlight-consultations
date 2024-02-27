@@ -67,7 +67,7 @@
 
               {% if user.is_superuser %}
                 <li class="nav-item">
-                  <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa-solid fa-unlock"></i></a>
+                  <a class="nav-link" aria-label="admin" href="{% url 'admin:index' %}"><i class="fa-solid fa-unlock"></i> Admin</a>
                 </li>
               {% endif %}
             {% else %}
