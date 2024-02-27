@@ -3,10 +3,13 @@ from django import forms
 from booking.models import Booking
 from service.models import Service
 from django.core.exceptions import ValidationError
+from datetime import date
+
 
 
 TIME_OPTIONS = [(f"{hour}:00", f"{hour}:00") for hour in range(9, 18)]
 SERVICE_OPTIONS = [(service.id, service.name) for service in Service.objects.all()]
+current_date = date.today()
 
 
 class BookingForm(forms.ModelForm):
@@ -33,7 +36,7 @@ class BookingForm(forms.ModelForm):
     booking_date = forms.DateField(
         required=True,
         widget=forms.DateInput(
-            attrs={"class": "form-control datepicker", "type": "date"}
+            attrs={"class": "form-control datepicker", "type": "date", "min": current_date}
         ),
     )
    
