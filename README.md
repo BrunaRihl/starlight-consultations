@@ -94,3 +94,15 @@ The choice of colors for the website was carefully planned, with shades of purpl
 
 ![Starlight website color palette](/static/images/docs/palette.png)
 
+### Typography 
+
+Google Fonts was utilized to incorporate the selected font styles into the website. 
+
+I selected 'Montserrat Alternates' for the body text due to its clean and contemporary appearance, enhancing readability across various content sections. As for the logo, I chose 'Mystery Quest' to evoke a sense of mystery and intrigue, aligning with the mystical theme of the website while adding a unique touch to the brand identity.
+
+![Starlight fonts choosen](/static/images/docs/fonts.png)  
+
+### Imagery 
+
+The selected images for the website aim to immerse users in the realm of consultations offered by the consultants. I ensured they were of good resolution, seamlessly integrating with the colors and theme of the site. The goal was to provide a visually engaging and cohesive experience, connecting users to the spiritual environment of the consultations while facilitating understanding of the services available for booking through the platform.
+
