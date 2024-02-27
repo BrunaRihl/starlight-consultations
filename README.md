@@ -56,11 +56,11 @@ The live demo is available [here]()!
 
 Starlight is a fictional website I created to offer online consultations for Tarot, Runes, and Astrological Charts. It was developed with the intention of providing an engaging and informative experience for users interested in divination and esoteric exploration. Every aspect of the site, from design to content, has been planned to ensure easy and intuitive navigation.
 
-### User base
+#### User base
 
 Individuals interested in Tarot, Runes, and Astrological Chart consultations, seeking guidance and insights on personal, spiritual, and emotional matters. This may also encompass those wishing to explore alternative methods of self-discovery and personal growth, as well as individuals seeking online support to share spiritual experiences and obtain consultation services.
 
-### Website Game Goals  
+#### Website Goals  
 
 The goal of the Starlight platform is to provide a comprehensive and user-friendly experience for individuals seeking guidance in Tarot, Runes, and Astrology. The website aims to:
 
@@ -78,4 +78,19 @@ Administrators:
 * Ensure the security of user data.
 * Enable regular updates to the "About" page, providing detailed information about the services offered and the platform's philosophy.
 
+### Flowchart
+
+
+### ERD
+
+
+
+
+## Design
+
+### Color palette
+
+The choice of colors for the website was carefully planned, with shades of purple and lilac being selected for their association with spirituality, intuition, and calmness. These colors were chosen to create a pleasant and engaging atmosphere for users, conveying a sense of serenity and sophistication while reflecting the brand's identity and value proposition. Additionally, the strategic use of contrast was taken into account to facilitate website navigation and readability, ensuring a more intuitive and accessible experience for all visitors.
+
+![Starlight website color palette](/static/images/docs/palette.png)
 
