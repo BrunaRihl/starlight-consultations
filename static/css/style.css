@@ -3,6 +3,7 @@ body {
     padding-top: 80px;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
+
 }
 
 h2{
@@ -46,6 +47,7 @@ h2{
     color: #a80bb0;
 }
 
+
 /*-- hero style --*/
 
 .hero-image img {
@@ -63,6 +65,7 @@ h2{
     color: white;
 }
 
+
 /*-- team section --*/
 
 .icon-image{
@@ -77,12 +80,25 @@ h2{
     font-size: 80%;
 }
 
+
 /*-- about page --*/
 
 .profile-image {
     width: 75%;
 }
 
+
+/*-- booking section --*/
+
+.errorlist {
+    border-width: 1px;
+    border-style: double;
+    background-color: #ece3e3;
+    border-color: #c34141;
+    list-style-type: none;
+    font-weight: 400;
+    border-radius: 5px;
+}
 
 /*-- buttons styles --*/
 
@@ -112,7 +128,6 @@ h2{
     background-color: #fff;
     color: #8c778c;
     border-color:#8c778c;
-
 }
 
 .btn-edit:hover,
@@ -147,7 +162,6 @@ h2{
     color: #445261;
     text-decoration: underline;
 }
-
 
 
 /* Additional styles for smaller screens */
