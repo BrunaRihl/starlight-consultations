@@ -93,42 +93,51 @@ During the project development, the creation of epics, user stories, acceptance 
 * The 'Set up' epic encompasses the activities required to establish the initial development environment of the project, including installing tools, configuring version control systems, and organizing the project structure.
 
   * User Story: Early deployment
+
 As a developer, I can deploy an initial version of the application on Heroku so that I can verify the functionality of the initial setup and continue testing the application during development.
 
   * User Story: Setting Up Initial Django Project Structure
+
 As a developer, I can establish the foundational structure of a Django project for a reservation website so that I can ensure smooth progression in both development and deployment.
 
   * User Story: Database Integration 
+
 As a developer I can establish database connectivity and media storage so that user data is successfully stored.
 
 #### EPIC 2: Admin Dashboard
 
-* The Admin Dashboard epic aims to create a robust and intuitive interface for administrators to manage various aspects of the website or application efficiently. This includes functionalities such as user management, content moderation and configuration. The goal is to provide administrators with comprehensive tools and features to oversee and control the platform effectively.
+* The Admin Dashboard epic aims to create a  interface for administrators to manage various aspects of the website or application efficiently. This includes functionalities such as user management, content moderation and configuration. 
 
   * User Story: Website Administration Control
+
 As an administrator, I can manage users, content, and settings on the website so that I can ensure a consistent and high-quality experience for end users.
 
   * User Story: Administrative Interface
+
 As a developer, I can develop an intuitive administrative interface for administrators to efficiently manage users, content, and settings so that the website can be effectively controlled and maintained.
 
 #### EPIC 3: About Page
 
-* The About Page epic aims to improve the "About" section of the website, providing users with a more informative and engaging experience. This includes updating the page content, enhancing its visual design, and ensuring that it clearly conveys the company's message and values. The goal is to create an About page that is both attractive and effective in communicating the organization's objectives and identity to visitors.
+* The About Page epic aims to improve the "About" section of the website, providing users with a more informative and engaging experience. This includes updating the page content, enhancing its visual design, and ensuring that it clearly conveys the company's message and values.
 
   * User Story: View About Page 
+
 As a site user, I can access the "About" page to obtain information about the company, team, or project so that I can learn more about its background and objectives.
 
   * User Story: Manage About Page Content
+
 As an administrator, I can edit and update the content of the "About" page as needed so that I can keep it up-to-date with the latest information.
 
 #### EPIC 4: Booking System
 
-* The Booking System epic addresses the implementation of a system that allows users to make reservations for services offered on the website, while providing administrators with the necessary tools to efficiently manage these bookings. This involves creating intuitive interfaces for users to make reservations, as well as an administrative panel for administrators to manage all bookings. The goal is to provide users with an integrated and convenient experience while simplifying the administration process for the website team.
+* The Booking System epic addresses the implementation of a system that allows users to make reservations for services offered on the website, while providing administrators with the necessary tools to efficiently manage these bookings. This involves creating intuitive interfaces for users to make reservations, as well as an administrative panel for administrators to manage all bookings.
 
   * User Story: Make Online Booking
+
 As a user, I can to be able to make an online booking to schedule a consultation with one of the services offered on the website so that I can easily arrange an appointment at my convenience.
 
   * User Story: Manage Bookings
+
 As an administrator, I can access the admin dashboard to manage bookings, ensuring efficient organization and oversight of all scheduled appointments, so that I can effectively coordinate and optimize the booking process.
 
 
@@ -137,32 +146,38 @@ As an administrator, I can access the admin dashboard to manage bookings, ensuri
 * The User Authentication epic deals with implementing a system for user registration, login, and logout on the website. This enables users to create accounts, log in to access exclusive features, and log out when they wish to exit. The goal is to ensure the security of user accounts and provide a seamless and secure user experience.
 
   * User Story: Register Account
+
 As a user, I can register an account so that I can access additional services on the website.
 
   * User Story: User Login
+
 As a user, I can to be able to log in to my account so that I can access personalized features and services on the website.
 
   * User Story: User Logout
+
 As a user, I can to be able to log out of my account so that I can securely end my session on the website.
 
 #### EPIC 6: User Authentication
 
-* The Accessibility epic aims to ensure that the website is accessible to all users, regardless of their abilities or needs. This involves implementing features and practices that make the site easy to use and understand for all users, including those with visual, auditory, or motor impairments. The goal is to provide an inclusive and accessible experience for all users, ensuring they can navigate the site, access information, and use the features effectively.
+* The Accessibility epic aims to ensure that the website is accessible to all users, regardless of their abilities or needs. This involves implementing features and practices that make the site easy to use and understand for all users, including those with visual, auditory, or motor impairments. 
 
 
   * User Story: Website Accessibility
+
 As a user, I can navigate the website with ease and access all content so that I can have an inclusive browsing experience and access information effectively.
 
 
   * User Story: Accessible Features
+
 As a developer, I can implement accessible features on the website to ensure a positive user experience for all users, so that everyone can access and effectively use the website.
 
 
 #### EPIC 7: Project Documentation
 
-* The Project Documentation epic aims to create comprehensive documentation that clearly explains the purpose, functionality, and usage of the project. This includes crafting a README.md file to provide detailed information about the project, facilitating understanding and collaboration among users and contributors. The goal is to ensure that everyone involved can easily access the necessary information about the project, including its design, features, technologies used, testing procedures, deployment instructions, and credits for the resources utilized.
+* The Project Documentation epic aims to create comprehensive documentation that clearly explains the purpose, functionality, and usage of the project. This includes crafting a README.md file to provide detailed information about the project, facilitating understanding and collaboration among users and contributors. 
 
   * User Story: README Documentation
+
 As a developer, I can create a README.md file to document and present the project to users and collaborators so that they can easily understand the purpose, functionality, and usage of the project.
 
 #### EPIC 8: User Authentication
@@ -170,6 +185,7 @@ As a developer, I can create a README.md file to document and present the projec
 * This epic focuses on comprehensive testing procedures to ensure the reliability, functionality, and usability of the project. It involves documenting testing procedures, conducting backend and frontend tests, evaluating compatibility, and gathering user feedback for UI improvements. The goal is to ensure high-quality and usability of the software before deployment.
 
   * User Story: Testing Procedures
+
 As a developer, I can thoroughly test the project so that I can ensure its quality and usability.
 
 
