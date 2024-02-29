@@ -248,6 +248,25 @@ A functionality has been implemented on the website that displays a message belo
 ![Starlight auth](/assets/images/auth.jpg)
 
 
+### Sign Up Page
+
+- On the registration page, new users can start their journey on Starlight by creating a personalized account. Here, users provide essential information such as name, email address (optional), and password to establish their identity in the system. During the registration process, each user is prompted to choose a unique username, ensuring uniqueness among all accounts. Additionally, the system checks if the provided email address has not already been registered.
+
+
+### Login Page
+- On the login page, registered users can access their existing accounts on Starlight. Using a simple form, users input their credentials, including username and password, to sign into the system. Once authenticated, users have immediate access to the site's personalized features, allowing them to explore and utilize the available functionalities.
+
+
+
+### Logout Page
+
+-  The logout page provides users with a convenient way to end their sessions on Starlight. By clicking the "Logout" button, users are logged out of their accounts, ensuring the privacy and security of their information. Upon logout completion, users are redirected to a confirmation page and then to the homepage, providing a seamless and secure experience.
+
+
+
+#### Notification messages
+
+Starlight displays warning messages at crucial moments of user interaction with the platform. Upon successfully completing registration, logging in, or logging out, clear and informative messages are displayed on the screen to confirm the actions taken. These messages provide immediate feedback to the user, ensuring an intuitive and transparent user experience.
 
 ### Home Page 
 
@@ -277,5 +296,74 @@ A functionality has been implemented on the website that displays a message belo
 
 
 ![Starlight book now](/assets/images/about-choose.jpg)
+
+
+### About: 
+
+The "About" page provides a detailed insight into the purpose and services available on the site. 
+
+* Key Highlights:
+  * Flexible Content: The administrator can easily update the content of the "About Us" page using the Django admin panel.
+
+  * Update Information: The date of the last update is displayed on the page so that visitors know when the content was last revised.
+
+  * If the user is logged in, a "Book Now" button is displayed, if the user is not logged in, a "Login First" button is shown.
+
+
+![Starlight about](/assets/images/services.jpg)
+![Starlight about](/assets/images/packages.jpg)
+
+
+### Booking:
+
+The Booking section offers users the opportunity to schedule appointments with consultants. This feature is accessible from the navigation bar and is only displayed when the user is logged in. Upon accessing the Appointment page, users are presented with a simple form to schedule their appointments.
+
+#### Key Features:
+
+* Service Selection: Users can select the desired service, such as tarot reading, rune consultation, or interpretation of astral maps, through a dropdown menu.
+
+* Date and Time Scheduling: A calendar interface allows users to choose the date of the appointment. Dates prior to the current day are disabled to prevent scheduling appointments in the past. The available appointment times are from 9:00 AM to 5:00 PM.
+
+* Optional Message Addition: Users have the option to include an additional message or specific request in the designated field.
+
+* Appointment Confirmation: After filling out all the necessary details, users can save the appointment by clicking the "Save" button.
+
+* Conflicting Times: Upon submission of the appointment scheduling form, if the selected time slot is already booked by another user, a message will be displayed informing the user that the chosen time slot is not available.
+
+* Informative Messages: When users perform actions such as updating, creating, or deleting appointments, informative messages are displayed on the appointment list page, confirming the success of the operation or providing feedback in case of errors.
+
+* Viewing and Management: Below the scheduling form, a table displays all scheduled appointments, including date, time, and selected service. Users can delete or edit their appointments using the corresponding buttons next to each entry.
+
+* Appointment Deletion: Users have the ability to remove appointments from their schedule, and before deletion is finalized, a confirmation is requested to ensure that the user truly wants to remove the appointment.
+
+![Starlight booking page](/assets/images/gallery.jpg)
+
+
+### The footer: 
+
+* All pages of the website have a footer at the bottom of the page. 
+
+* The social media icons have been included, allowing users to access the community's social platforms and stay connected and updated. 
+
+* Clicking on these icons will open the links in new tabs for ease of navigation.  
+
+![Starlight footer](/assets/images/footer.jpg)  
+
+
+### 404 Page:
+
+Developed a custom 404 error page to properly handle situations where users accessed non-existent pages or encountered broken links. This page provides clear navigation options to assist users in returning to the main site.
+
+
+### Features and resources to be added in the future  
+
+* Implement a rating and commenting system to allow users to rate and leave comments on the consultations or services received, providing valuable feedback to the consultants and helping other users make informed decisions.
+
+* Integrate an email or SMS notification system to remind users of scheduled appointments, provide updates on new content or special offers, and keep users engaged with the site.
+
+* Expand the site to include an educational content section, offering articles, videos, and resources on tarot, runes, astrology, and other related areas, helping users deepen their knowledge and understanding, and encouraging them to return to the site more frequently.
+
+
+
 
 
