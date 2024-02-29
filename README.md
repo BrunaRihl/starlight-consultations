@@ -90,7 +90,7 @@ Administrators:
 During the project development, the creation of epics, user stories, acceptance criteria, and tasks was crucial in guiding and successfully concluding the project. These elements provided a clear and detailed framework for planning and executing activities, ensuring alignment with the project's objectives and expectations. Among them were:
 
 #### EPIC 1: Set Up
-* The 'Set up' epic encompasses the activities required to establish the initial development environment of the project, including installing tools, configuring version control systems, and organizing the project structure.
+ The 'Set up' epic encompasses the activities required to establish the initial development environment of the project, including installing tools, configuring version control systems, and organizing the project structure.
 
   * User Story: Early deployment
 
@@ -106,7 +106,7 @@ As a developer I can establish database connectivity and media storage so that u
 
 #### EPIC 2: Admin Dashboard
 
-* The Admin Dashboard epic aims to create a  interface for administrators to manage various aspects of the website or application efficiently. This includes functionalities such as user management, content moderation and configuration. 
+The Admin Dashboard epic aims to create a  interface for administrators to manage various aspects of the website or application efficiently. This includes functionalities such as user management, content moderation and configuration. 
 
   * User Story: Website Administration Control
 
@@ -118,7 +118,7 @@ As a developer, I can develop an intuitive administrative interface for administ
 
 #### EPIC 3: About Page
 
-* The About Page epic aims to improve the "About" section of the website, providing users with a more informative and engaging experience. This includes updating the page content, enhancing its visual design, and ensuring that it clearly conveys the company's message and values.
+The About Page epic aims to improve the "About" section of the website, providing users with a more informative and engaging experience. This includes updating the page content, enhancing its visual design, and ensuring that it clearly conveys the company's message and values.
 
   * User Story: View About Page 
 
@@ -130,7 +130,7 @@ As an administrator, I can edit and update the content of the "About" page as ne
 
 #### EPIC 4: Booking System
 
-* The Booking System epic addresses the implementation of a system that allows users to make reservations for services offered on the website, while providing administrators with the necessary tools to efficiently manage these bookings. This involves creating intuitive interfaces for users to make reservations, as well as an administrative panel for administrators to manage all bookings.
+The Booking System epic addresses the implementation of a system that allows users to make reservations for services offered on the website, while providing administrators with the necessary tools to efficiently manage these bookings. This involves creating intuitive interfaces for users to make reservations, as well as an administrative panel for administrators to manage all bookings.
 
   * User Story: Make Online Booking
 
@@ -143,7 +143,7 @@ As an administrator, I can access the admin dashboard to manage bookings, ensuri
 
 #### EPIC 5: User Authentication
 
-* The User Authentication epic deals with implementing a system for user registration, login, and logout on the website. This enables users to create accounts, log in to access exclusive features, and log out when they wish to exit. The goal is to ensure the security of user accounts and provide a seamless and secure user experience.
+The User Authentication epic deals with implementing a system for user registration, login, and logout on the website. This enables users to create accounts, log in to access exclusive features, and log out when they wish to exit. The goal is to ensure the security of user accounts and provide a seamless and secure user experience.
 
   * User Story: Register Account
 
@@ -159,7 +159,7 @@ As a user, I can to be able to log out of my account so that I can securely end 
 
 #### EPIC 6: User Authentication
 
-* The Accessibility epic aims to ensure that the website is accessible to all users, regardless of their abilities or needs. This involves implementing features and practices that make the site easy to use and understand for all users, including those with visual, auditory, or motor impairments. 
+The Accessibility epic aims to ensure that the website is accessible to all users, regardless of their abilities or needs. This involves implementing features and practices that make the site easy to use and understand for all users, including those with visual, auditory, or motor impairments. 
 
 
   * User Story: Website Accessibility
@@ -174,7 +174,7 @@ As a developer, I can implement accessible features on the website to ensure a p
 
 #### EPIC 7: Project Documentation
 
-* The Project Documentation epic aims to create comprehensive documentation that clearly explains the purpose, functionality, and usage of the project. This includes crafting a README.md file to provide detailed information about the project, facilitating understanding and collaboration among users and contributors. 
+The Project Documentation epic aims to create comprehensive documentation that clearly explains the purpose, functionality, and usage of the project. This includes crafting a README.md file to provide detailed information about the project, facilitating understanding and collaboration among users and contributors. 
 
   * User Story: README Documentation
 
@@ -182,7 +182,7 @@ As a developer, I can create a README.md file to document and present the projec
 
 #### EPIC 8: User Authentication
 
-* This epic focuses on comprehensive testing procedures to ensure the reliability, functionality, and usability of the project. It involves documenting testing procedures, conducting backend and frontend tests, evaluating compatibility, and gathering user feedback for UI improvements. The goal is to ensure high-quality and usability of the software before deployment.
+This epic focuses on comprehensive testing procedures to ensure the reliability, functionality, and usability of the project. It involves documenting testing procedures, conducting backend and frontend tests, evaluating compatibility, and gathering user feedback for UI improvements. The goal is to ensure high-quality and usability of the software before deployment.
 
   * User Story: Testing Procedures
 
@@ -222,4 +222,60 @@ I selected 'Montserrat Alternates' for the body text due to its clean and contem
 The selected images for the website aim to immerse users in the realm of consultations offered by the consultants. I ensured they were of good resolution, seamlessly integrating with the colors and theme of the site. The goal was to provide a visually engaging and cohesive experience, connecting users to the spiritual environment of the consultations while facilitating understanding of the services available for booking through the platform.
 
 ### Wireframes
+
+## Features
+
+The website comprises three primary pages: a welcoming home page, an informative about page, and a convenient booking page.
+
+### Navigation bar 
+
+* All pages feature a responsive navigation bar at the top of the screen.
+* In the top-left corner, the site's logo is displayed, allowing users to return to the homepage with a single click.
+* Navigation adaptation on smaller screens such as tablets and smartphones is automatic. These features were implemented using the Bootstrap framework, ensuring smooth and responsive navigation.
+* On mobile devices, the navigation bar is transformed into a hamburger menu to optimize the user experience.
+* The menu provides links to the main pages of the site, including Home, About, Booking, Register, and Login/Logout.
+* To assist users in navigating the site, a visual effect has been added to highlight menu items when the mouse cursor hovers over them.
+* The "Booking" option is displayed only for logged-in users, remaining hidden for non-authenticated users.
+* Additionally, when the superuser is logged in, an additional option is provided in the menu, allowing direct access to the administrative control panel.
+
+![Starlight nav bar](/assets/images/nav.jpg)
+
+#### Authentication Status
+
+A functionality has been implemented on the website that displays a message below the navigation bar, informing whether the user is logged in or not. This message allows users to easily identify their authentication status while browsing the site.
+
+
+![Starlight auth](/assets/images/auth.jpg)
+
+
+
+### Home Page 
+
+#### Header: 
+
+* The main image showcases hands manipulating a tarot card deck, aligning with the central theme of the site about tarot readings, rune consultations, and interpretations of astral maps.
+* The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
+
+![Starlight - image hero](/assets/images/hero.jpg)
+
+#### Sections: 
+
+* Below the main image, users will find the "Our Team" section.
+
+  * This section highlights the services offered by the site, such as tarot readings, rune consultations, and interpretations of astrological charts.
+
+  * Using Bootstrap cards, each service is presented concisely, providing an overview of what the site offers to users.
+
+![Starlight Our Team](/assets/images/about-choose.jpg)
+
+
+* Additionally, there's a "Book Now" section, where users can schedule consultations directly through the site.
+
+  * If the user is logged in, a "Book Now" button is displayed, allowing them to proceed with scheduling.
+
+  * If the user is not logged in, a "Login First" button is shown, prompting them to log in before booking an appointment.
+
+
+![Starlight book now](/assets/images/about-choose.jpg)
+
 
