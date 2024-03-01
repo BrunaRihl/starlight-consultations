@@ -365,6 +365,9 @@ Developed a custom 404 error page to properly handle situations where users acce
 
 * Expand the site to include an educational content section, offering articles, videos, and resources on tarot, runes, astrology, and other related areas, helping users deepen their knowledge and understanding, and encouraging them to return to the site more frequently.
 
+### Accessibility
+
+From the project's inception, the game website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
 
 
 
