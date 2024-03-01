@@ -272,6 +272,8 @@ Starlight displays warning messages at crucial moments of user interaction with 
 
 #### Header: 
 
+#### Favicon: 
+
 * The main image showcases hands manipulating a tarot card deck, aligning with the central theme of the site about tarot readings, rune consultations, and interpretations of astral maps.
 * The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
 
