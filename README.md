@@ -370,5 +370,41 @@ Developed a custom 404 error page to properly handle situations where users acce
 From the project's inception, the game website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
 
 
+## Testing 
+
+### Tested Browsers and Devices: 
+
+* Web Browsers: 
+
+  * Google Chrome;
+
+  * Microsoft Edge; 
+ 
+  * Safari; 
+
+  * Mozilla Firefox.
+
+
+* Mobile Devices: 
+
+  * iPhone Xr;
+
+  * iPhone 12 Pro; (Google Chrome Inspector) 
+
+  * Samsung Galaxy S20 Ultra. (Google Chrome Inspector) 
+
+
+* Tablet: 
+
+  * Ipad Air 4, 10.9-inch screen;
+
+  * Nest Hub. (Google Chrome Inspector) 
+
+ 
+* Laptop: 
+
+  * Macbook Air, 13-inch screen;
+
+  * Asus TUF F15, 15.6-inch screen. 
 
 
