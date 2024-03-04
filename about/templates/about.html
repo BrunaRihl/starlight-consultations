@@ -1,15 +1,35 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-4 text-center">
-            <img src="{% static 'images/about.png' %}" width="100%">
+{% block content %}
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3 masthead-text">
+                <!-- Post title goes in these h1 tags -->
+                <h1 class="post-title ">{{ about.title }}</h1>
+            </div>
+            <div class="d-none d-md-block col-md-9 masthead-image">
+                {% if "placeholder" in about.featured_image.url %}
+                <img src="{% static 'images/about.png' %}" class="scale" alt="placeholder">
+                {% else %}
+                <img src="{{ about.featured_image.url }}" class="scale" alt="{{ about.title }}">
+                {% endif %}
+            </div>
         </div>
-        <div class="col-8">
-            <h2>{{ about.title }}</h2>
-            {{ about.content | safe }}
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col mb-4  mt-3 left  top">
+            <div class="card-body">
+                <!-- The post content goes inside the card-text. -->
+                <!-- Use the | safe filter inside the template tags -->
+                <article class="card-text">
+                    {{ about.content | safe }}
+                </article>
+            </div>
         </div>
     </div>
     <div class="row">
