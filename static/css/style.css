@@ -92,10 +92,47 @@ h2{
 
 /*-- about page --*/
 
-.profile-image {
-    width: 75%;
+.scale {
+    width: 100%;
+    height: auto;
 }
 
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+}
+
+.masthead-text {
+    font-family: "Mystery Quest", system-ui;
+    letter-spacing: 5px;
+    background-color: #eeaef6;
+    color: black;
+    padding-left: 50px;
+    padding-top: 150px;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #eeaef6;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(10deg);
+    z-index: 100;
+}
 
 /*-- booking section --*/
 
