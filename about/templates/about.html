@@ -36,7 +36,13 @@
         <div class="col text-right">
             <!-- Book now button -->
             <div class="text-end">
-                <button type="button" class="btn btn-secondary btn-lg btn-book">Book Now!</button>
+                {% if user.is_authenticated %}
+                <a class="btn btn-secondary btn-lg btn-book" 
+                href="{% url 'create_booking' %}">Book Now!</a>
+                {% else %}
+                <a class="btn btn-secondary btn-lg btn-book" 
+                href="{% url 'account_login' %}">Login First!</a>
+                {% endif %}
             </div>  
             <!-- Updated on field goes in here -->
             <br>
