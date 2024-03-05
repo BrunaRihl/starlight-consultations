@@ -9,21 +9,16 @@ h2{
     font-size: 130%;
 }
 
-main {
-    padding-bottom: 10%;
-
-}
-
 .main-bg {
-    background-color: #F9FAFC;
+    background-color:  #F9FAFC;
 }
 
 .margin-top-div{
-    margin-top: 50px !important;
+    margin-top: 50px ;
 }
 
 .margin-bottom-div{
-    margin-bottom: 20px !important;
+    margin-bottom: 50px ;
 }
 
 
@@ -93,6 +88,7 @@ main {
 }
 
 /*-- footer --*/
+
 
 .copyright{
     font-size: 80%;
@@ -228,12 +224,7 @@ main {
     }
     .hero-text {
         padding: 10px;
-    }
-    main {
-        padding-bottom: 40%;
-    
-    }
-    
+    }    
 
   }
   

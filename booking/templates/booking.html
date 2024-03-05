@@ -14,7 +14,7 @@
       </div>
   </div>
 </section>
-<section class="container">
+<section class="container margin-bottom-div">
   <div class="row justify-content-center">
     <div class="col-md-9 col-12">
       <h2 class="text-center">Next Bookings</h2>
@@ -37,8 +37,8 @@
               <td>{{ booking.booking_date }}</td>
               <td>{{ booking.booking_time }}</td>
               <td>
-                <a href="{% url 'edit_booking' booking_id=booking.id %}"  class="btn btn-primary btn-edit"><i class="far fa-edit" aria-label="edit"></i></a>
-                <a href="{% url 'delete_booking' booking_id=booking.id %}"  class="btn btn-secondary btn-delete"><i class="far fa-trash-alt" aria-label="delete"></i></a>
+                <a href="{% url 'edit_booking' booking_id=booking.id %}"  class="btn btn-primary btn-edit"><i class="far fa-edit" title="Edit my booking" aria-hidden="true" aria-label="edit"></i></a>
+                <a href="{% url 'delete_booking' booking_id=booking.id %}"  class="btn btn-secondary btn-delete"><i class="far fa-trash-alt" title="Delete my booking" aria-hidden="true" aria-label="delete"></i></a>
               </td>
             </tr>
             {% endfor %}

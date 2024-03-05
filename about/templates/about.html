@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-3 masthead-text">
-                <!-- Post title goes in these h1 tags -->
+                <!-- Post title -->
                 <h1 class="post-title ">{{ about.title }}</h1>
             </div>
             <div class="d-none d-md-block col-md-9 masthead-image">
@@ -19,13 +19,11 @@
         </div>
     </div>
 </div>
-
-<div class="container">
+<div class="container margin-bottom-div">
     <div class="row">
         <div class="col mb-4  mt-3 left  top">
             <div class="card-body">
-                <!-- The post content goes inside the card-text. -->
-                <!-- Use the | safe filter inside the template tags -->
+                <!-- about content  -->
                 <article class="card-text">
                     {{ about.content | safe }}
                 </article>
@@ -44,10 +42,9 @@
                 href="{% url 'account_login' %}">Login First!</a>
                 {% endif %}
             </div>  
-            <!-- Updated on field goes in here -->
+            <!-- Updated on field -->
             <br>
             <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
-
         </div>
       </div>
 </div>
