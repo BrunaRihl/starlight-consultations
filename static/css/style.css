@@ -9,11 +9,6 @@ h2{
     font-size: 130%;
 }
 
-main {
-    padding-bottom: 10%;
-
-}
-
 .main-bg {
     background-color: #F9FAFC;
 }
@@ -227,7 +222,6 @@ main {
         font-size: 170% !important
       }
   
-    font-size: ;
 }
 
 @media (max-width: 768px) {
