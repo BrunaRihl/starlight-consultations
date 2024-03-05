@@ -9,16 +9,21 @@ h2{
     font-size: 130%;
 }
 
+main {
+    padding-bottom: 10%;
+
+}
+
 .main-bg {
-    background-color:  #F9FAFC;
+    background-color: #F9FAFC;
 }
 
 .margin-top-div{
-    margin-top: 50px ;
+    margin-top: 50px !important;
 }
 
 .margin-bottom-div{
-    margin-bottom: 50px ;
+    margin-bottom: 20px !important;
 }
 
 
@@ -89,7 +94,6 @@ h2{
 
 /*-- footer --*/
 
-
 .copyright{
     font-size: 80%;
 }
@@ -115,7 +119,7 @@ h2{
     letter-spacing: 5px;
     background-color: #eeaef6;
     color: black;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 150px;
 }
 
@@ -218,6 +222,14 @@ h2{
 
 
 /* Additional styles for smaller screens */
+@media (max-width: 995px) {
+    .masthead-text h1 {
+        font-size: 170% !important
+      }
+  
+    font-size: ;
+}
+
 @media (max-width: 768px) {
     .table th, .table td {
       font-size: 14px; 
@@ -225,6 +237,22 @@ h2{
     .hero-text {
         padding: 10px;
     }    
+
+    .masthead {
+        height: auto;
+    }
+    .masthead-text {
+        padding-top: 50px;
+        padding-left: 20px; 
+        text-align: center; 
+    }
+    .masthead-image {
+        text-align: center;
+    }
+    .masthead-image img {
+        width: 80%; 
+    }
+
 
   }
   
