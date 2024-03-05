@@ -307,6 +307,8 @@ The "About" page provides a detailed insight into the purpose and services avail
 * Key Highlights:
   * Flexible Content: The administrator can easily update the content of the "About Us" page using the Django admin panel.
 
+  * The featured image on the "About" page is customizable using Cloudinary. This allows the page administrator to easily upload and edit the image to reflect the identity of their company or brand.
+
   * Update Information: The date of the last update is displayed on the page so that visitors know when the content was last revised.
 
   * If the user is logged in, a "Book Now" button is displayed, if the user is not logged in, a "Login First" button is shown.
@@ -453,6 +455,7 @@ From the project's inception, the game website's design has been planned with a 
 | **`About`** |
 |  |  |  |  |  |
 | Text Loading  | The text on the "About" page should match the content entered in the admin panel. | Compared displayed text with admin panel content. | Text matched admin panel content. | Pass |
+| Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass      |
 | Updated Date    | Creation date of the text displayed at the bottom of the page. | Checked if the displayed date matches the creation date of the text. | Date displayed matched the creation date of the text. | Pass |
 | Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Book Now" Button | Redirected to the login page. | Pass |
 | Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass | 
