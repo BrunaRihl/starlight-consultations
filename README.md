@@ -371,6 +371,17 @@ Developed a custom 404 error page to properly handle situations where users acce
 
 From the project's inception, the game website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
 
+### LightHouse 
+
+The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools.
+
+  * Desktop
+
+![LightHouse - desktop](/assets/images/docs/lighthouse.png)
+
+  * Mobile
+  
+![LightHouse - Mobile](/assets/images/docs/lignthouse-mobile.png)  
 
 ## Testing 
 
@@ -479,19 +490,27 @@ From the project's inception, the game website's design has been planned with a 
 To ensure compliance with coding best practices, I used the PEP8 validator to identify and rectify any issues in my code. 
 The identified errors were primarily related to improper use of whitespace, punctuation, and exceeding line length. All of these issues have been appropriately addressed, ensuring adherence to coding best practices.
    
-   * 
+  * CSS:  
 
-![PEP8 Validation - run.py](/assets/docs/pep8ci-run1.png)
+No errors were found during the validation process using the official Jigsaw validator. 
 
-![PEP8 Validation - run.py solved](/assets/docs/pep8ci-run2.png) 
 
-  * :
+![Jigsaw validator - Css](/assets/docs/pep8ci-run1.png)
+
+![Jigsaw validator - Css solved](/assets/docs/pep8ci-run2.png) 
+
+  * HTML:  
+
+No errors were found during the validation process using the official W3C validator.  
+
+
+![W3C validator - data.py](/assets/docs/pep8ci-data.png)
+
+![W3C validator - data.py solved](/assets/docs/pep8ci-data1.png) 
+
+  * Python:
 
 ![PEP8 Validation - data.py](/assets/docs/pep8ci-data.png)
-
-![PEP8 Validation - data.py solved](/assets/docs/pep8ci-data1.png) 
-
-  * :
 
 ![PEP8 Validation - auth.py solved](/assets/docs/pep8ci-auth.png) 
 
@@ -804,7 +823,7 @@ While working on the development of my Django project, there were occasions wher
 
 I created  the content for my application.
 
-* [Energetic Tarot](https://energetictarot.co.uk/what-are-esoteric-practices/) and ChatGPT: used to write the content about esotericism on the website.
+* [Energetic Tarot](https://energetictarot.co.uk/what-are-esoteric-practices/) and ChatGPT: used to assist in write the content about esotericism on the website.
 
 ### Media
 
