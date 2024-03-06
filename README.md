@@ -455,7 +455,7 @@ From the project's inception, the game website's design has been planned with a 
 | **`About`** |
 |  |  |  |  |  |
 | Text Loading  | The text on the "About" page should match the content entered in the admin panel. | Compared displayed text with admin panel content. | Text matched admin panel content. | Pass |
-| Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass      |
+| Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass |
 | Updated Date    | Creation date of the text displayed at the bottom of the page. | Checked if the displayed date matches the creation date of the text. | Date displayed matched the creation date of the text. | Pass |
 | Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Book Now" Button | Redirected to the login page. | Pass |
 | Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass | 
@@ -581,12 +581,190 @@ Google Dev Tools: Leveraged for debugging and testing features, as well as resol
 [GitHub](https://github.com/): Used to save and store the website files.
 
 
-### Python Libraries and Modules
+#### Python Libraries and Modules
 
 * **os:** Used for interacting with the operating system, including file system operations and environment variables.
 
 * **sys:** Provides access to interpreter variables and functions for interacting with the Python interpreter.
 
+* **pathlib:** Allows for easy and platform-independent manipulation of file paths, representing files and directories in the file system.
+
 * **datetime**: Used for date and time manipulation.
 
 * **cloudinary.models.CloudinaryField**: Utilized to integrate Cloudinary directly into Django models, facilitating storage and retrieval of images associated with these models.
+
+## Deployment  
+<details>
+  <summary> Deploying Your Project on Heroku</summary>
+
+* To get your project up and running on Heroku, follow these steps:
+
+1. **Create a List of Dependencies:**
+   - In the terminal, run the command `pip3 freeze > requirements.txt` to generate a list of dependencies needed for Heroku deployment.
+
+2. **Heroku Account Setup:**
+   - Log in to your Heroku account or create a new one if needed.
+
+3. **Create a New App:**
+   - Click on "New" in the top-right corner of your Heroku Dashboard, and select "Create new app" from the dropdown menu.
+   - Enter a unique app name and choose a region (EU or USA) closest to you.
+   - Click on "Create App".
+
+4. **Config Var**:
+   - In your new app’s settings tab, ensure the Config Var DISABLE_COLLECTSTATIC key has a value of 1.
+
+5. **Update Your Code for Deployment**:
+   - Use pip3 to install gunicorn and freeze it to the requirements.txt file.
+   - In the Procfile, add a command using gunicorn and your project wsgi file to start the webserver.
+     ```bash
+     web: gunicorn <your project>.wsgi
+     ```
+   - In thensettings.py file, set the DEBUG constant to False and append the '.herokuapp.com' hostname to the ALLOWED_HOSTS list.
+     ```python
+     DEBUG = False
+     ALLOWED_HOSTS = ['.herokuapp.com']
+     ```
+
+6. **Connect to GitHub:**
+   - Go to the "Deploy" tab and select "GitHub" as the deployment method.
+   - Click "Connect to GitHub" and search for your repository name.
+   - Click "Connect" to link the repository to Heroku.
+  - In your new app’s resources tab delete any Postgres database Add-on.
+
+7. **Deploy the App:**
+   - Scroll down to "Manual deploy" and click "Deploy Branch". This allows you to view the build logs as the app is being constructed.
+   - After the initial deployment, you can enable "Enable Automatic Deploys" to keep the app up-to-date with your GitHub repository.
+
+8. **Finalize Deployment:**
+   - Wait for the app to build. Once ready, you will see the "App was successfully deployed" message and a 'View' button to take you to your deployed link.
+
+
+You can access the live project by clicking [here](https://starlight-consultations-2b1105ac431c.herokuapp.com/).
+
+</details>
+
+<details>
+  <summary>Forking the Repository</summary>
+Forking the repository allows you to create a copy of the original repository in your GitHub profile. This enables you to view and edit the code without affecting the original repository.
+
+**Steps:**
+
+1. In the "starlight-consultations" repository, click on "Fork" in the top right corner.
+2. Confirm the creation of the fork.
+
+</details>
+
+<details>
+  <summary>Cloning the Repository</summary>
+Cloning a repository means obtaining a local copy to work on in your own development environment.
+
+**Steps:**
+
+1. In the repository, click on "Code" above the file list.
+2. Copy the URL.
+3. Open Git Bash.
+4. Navigate to the directory where you want to clone the repository.
+5. Type `git clone` followed by the URL and press "enter".
+
+</details>
+
+<details>
+  <summary>Setting up ElephantSQL PostgreSQL Database
+</summary>
+
+Steps to create an instance of a cloud-based PostgreSQL database using ElephantSQL and connect it to our Django project.
+
+**Steps**
+
+1. **Create PostgreSQL Instance:**
+   - Log into your ElephantSQL dashboard.
+   - Click on "Create New Instance".
+   - Set up your plan
+   - Select a data center near you.
+   - Click "Review".
+   - Verify your details and click "Create instance".
+
+2. **Copy Database URL:**
+   - Click on "DETAILS" and copy the URL.
+
+   
+3. **Create `env.py` File:**
+   - Create a file named `env.py` at the top level of your project.
+   - Add the following code to `env.py`, replacing `<your-database-URL>` with the URL copied from ElephantSQL:
+     ```python
+     import os
+
+     os.environ.setdefault(
+         "DATABASE_URL", "<your-database-URL>"
+     )
+     ```
+
+4. **Update `.gitignore` File:**
+   - Open `.gitignore` file and add `env.py` to prevent secret data from being pushed to GitHub.
+
+5. **Install Database Packages:**
+   - Install the required packages to connect to your PostgreSQL database:
+
+6. **Update `settings.py`:**
+   - Import required packages in `settings.py`:
+     ```python
+     import os
+     import dj_database_url
+
+     if os.path.isfile('env.py'):
+         import env
+     ```
+   - Connect to the environment variable `DATABASE_URL`:
+     ```python
+     DATABASES = {
+         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+     }
+     ```
+
+7. **Migrate Database Tables:**
+   - Run migrations to create database tables
+
+8. **Create Superuser:**
+    - Create a superuser for admin access to the database:
+      ```bash
+      python manage.py createsuperuser
+      ```
+    - Follow the prompts to choose a username, email, and password.
+
+9. **Deploy the Project:**
+    - Change DEBUG value to False in `settings.py`.
+    - Push your updated code to GitHub.
+    - Go to the Heroku dashboard and deploy your project.
+
+10. **Connect Heroku to PostgreSQL Database:**
+    - Go to the Heroku app's Settings tab and click "Reveal Config Vars".
+    - Add a new config var with a key of `DATABASE_URL` and the value of the ElephantSQL URL.
+
+</details>
+
+<details>
+  <summary>Setting up Cloudinary</summary>
+
+To ensure proper image management in your Django application, it's essential to set up Cloudinary.
+
+**Steps:**
+
+1. Install the required Python packages to connect to the Cloudinary API
+
+2. Access the Cloudinary dashboard and log in or create a new account.
+
+3. In the Cloudinary dashboard, copy the Cloudinary URL.
+
+4. Open the `env.py` file in your project and set the value of the `CLOUDINARY_URL` constant to the URL copied from the Cloudinary dashboard.
+
+5. Open the `settings.py` file and add the required apps to the `INSTALLED_APPS` list.
+
+6. In `models.py`, import `CloudinaryField` from `cloudinary.models`.
+
+7. Add a new field `featured_image` to the model.
+
+8. Run migrations to create a new migrations file and apply the changes to the database schema.
+
+9. In the Heroku dashboard, add a key:value pair for `CLOUDINARY_URL` in the config vars.
+
+</details>
