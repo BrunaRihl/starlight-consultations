@@ -472,3 +472,121 @@ From the project's inception, the game website's design has been planned with a 
 | Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
 
 
+### Validator Testing  
+
+#### Python PEP8 Validation 
+
+To ensure compliance with coding best practices, I used the PEP8 validator to identify and rectify any issues in my code. 
+The identified errors were primarily related to improper use of whitespace, punctuation, and exceeding line length. All of these issues have been appropriately addressed, ensuring adherence to coding best practices.
+   
+   * 
+
+![PEP8 Validation - run.py](/assets/docs/pep8ci-run1.png)
+
+![PEP8 Validation - run.py solved](/assets/docs/pep8ci-run2.png) 
+
+  * :
+
+![PEP8 Validation - data.py](/assets/docs/pep8ci-data.png)
+
+![PEP8 Validation - data.py solved](/assets/docs/pep8ci-data1.png) 
+
+  * :
+
+![PEP8 Validation - auth.py solved](/assets/docs/pep8ci-auth.png) 
+
+The corrections were implemented in accordance with the validator's suggestions.
+
+### Bugs
+
+#### Solved Bugs
+
+#### 
+
+  * Bug Description:
+
+
+![bug - ](/assets/docs/bug1.png)
+
+
+  * Action Taken:
+
+
+![Solved bug - ](/assets/docs/bug1-solved.png)
+
+#### Naming Conflict
+
+  * Bug Description:
+
+
+  * Action Taken:
+
+
+
+![Solved bug - ](/assets/docs/bug2.png)
+
+
+#### Disruption of program name ASCII art
+
+  * Bug Description:
+
+
+![bug - ](/assets/docs/bug3-1.png)
+
+
+  * Action Taken:
+
+
+![Solved bug - ](/assets/docs/bug3-solved.png)
+
+
+
+#### Unsolved Bugs
+
+No unfixed bugs.
+
+## Technologies Used
+### Languages
+
+* Python 3.
+
+### Frameworks, Libraries & Programs
+
+Visual Studio Code (VS Code): Utilized as a source code editor.
+
+[Django](https://www.djangoproject.com/): Used as a web framework for building the application.
+
+[Bootstrap](https://getbootstrap.com/): Utilized for responsive and mobile-first front-end web development.
+
+[Cloudinary](https://cloudinary.com/): Used for image management, including image upload, storage, and manipulation.
+
+[ElephantSQL](https://www.elephantsql.com/): Utilized for managing PostgreSQL databases in the cloud.
+
+[Google Fonts](https://fonts.google.com/): Imported to integrate font styles into the website. 
+
+[Font Awesome](https://fontawesome.com/): Incorporated to easily add icons across the website.
+
+[Lucidchart](https://lucid.app/): employed in the planning phase for crafting flowcharts
+
+[Heroku Platform](https://dashboard.heroku.com/apps): for deploying the application in a live environment.
+
+Google Dev Tools: Leveraged for debugging and testing features, as well as resolving issues related to responsiveness and styling. 
+
+[Pep8 online](https://pep8ci.herokuapp.com/): Used to identify issues in my Python code.
+
+[The W3C Markup Validation Service](https://validator.w3.org/): Used to validate the accuracy and validity of HTML code.
+
+[The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/): Employed to validate the correctness and compliance of CSS code.
+
+[GitHub](https://github.com/): Used to save and store the website files.
+
+
+### Python Libraries and Modules
+
+* **os:** Used for interacting with the operating system, including file system operations and environment variables.
+
+* **sys:** Provides access to interpreter variables and functions for interacting with the Python interpreter.
+
+* **datetime**: Used for date and time manipulation.
+
+* **cloudinary.models.CloudinaryField**: Utilized to integrate Cloudinary directly into Django models, facilitating storage and retrieval of images associated with these models.
