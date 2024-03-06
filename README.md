@@ -548,7 +548,7 @@ No unfixed bugs.
 ## Technologies Used
 ### Languages
 
-* Python 3.
+* Python 3, Html, Css, JavaScript.
 
 ### Frameworks, Libraries & Programs
 
@@ -593,7 +593,8 @@ Google Dev Tools: Leveraged for debugging and testing features, as well as resol
 
 * **cloudinary.models.CloudinaryField**: Utilized to integrate Cloudinary directly into Django models, facilitating storage and retrieval of images associated with these models.
 
-## Deployment  
+## Deployment
+
 <details>
   <summary> Deploying Your Project on Heroku</summary>
 
