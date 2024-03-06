@@ -769,3 +769,70 @@ To ensure proper image management in your Django application, it's essential to 
 9. In the Heroku dashboard, add a key:value pair for `CLOUDINARY_URL` in the config vars.
 
 </details>
+
+## Credits
+
+### Code
+
+While working on the development of my Django project, there were occasions where I needed to conduct research that covered topics beyond the scope of the course or even required thorough revision. Below, I am sharing the links to the consulted sources:
+
+* [Scrum & Kanban - Theme, Epic, Story, Task](https://scrumandkanban.co.uk/theme-epic-story-task/)
+
+* [Djangoproject - Built-in template tags and filters](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#ref-templates-builtins-filters)
+
+* [Djangoproject - QuerySet API reference](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#first)
+
+* [Django-allauth - Quickstart](https://docs.allauth.org/en/latest/installation/quickstart.html)
+
+* [Djangoproject - Making queries](https://docs.djangoproject.com/en/5.0/topics/db/queries/)
+
+* [Bootstrap - Spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding)
+
+* [Bootstrap - Introduction](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+* [w3schools - HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+
+* [Stackoverflow - Django won't refresh staticfiles](https://stackoverflow.com/questions/27911070/django-wont-refresh-staticfiles)
+
+* [Fontawesome - Accessibility](https://fontawesome.com/docs/web/dig-deeper/accessibility)
+
+* [README Example](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md): To write the README file, I followed the structure and table format (testing section) from the readme-examples repository by Kera Cudmore.
+
+* The foundation of the project was established using the CI I Think Therefore I Blog project example as a starting point.
+
+### Content
+
+I created  the content for my application.
+
+* [Energetic Tarot](https://energetictarot.co.uk/what-are-esoteric-practices/) and ChatGPT: used to write the content about esotericism on the website.
+
+### Media
+
+[Favicon.io](https://favicon.io/favicon-converter/): utilized to convert the star image from the logo into a favicon.
+
+[Adobe Express](https://www.adobe.com/br/express/feature/image/resize): utilized for image manipulation and resizing.
+
+MS Paint: used to edit the images. 
+
+PowerPoint: Utilized to create the design for my game project.
+
+[Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): utilized to create the color palette. 
+
+[Unsplash](https://unsplash.com/) and [Freepik](https://br.freepik.com/): used to source images for the game website. 
+
+[Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): utilized to view the website's appearance and responsiveness across a range of devices.
+
+
+### Acknowledgments
+
+I would like to extend my sincere gratitude to the individuals who offered their assistance and support throughout the entirety of this project:
+
+Jubril Akolade, my mentor, for his guidance and constructive feedback.
+
+Laura Mayock, the Cohort Facilitator at Code Institute, for consistently steering our studies in the most effective direction.
+
+My friends Ivan Frezza and Bruna Andelieri, providing valuable insights and clarifying uncertainties about my code. Thank you for always supporting me.
+
+My husband Jasser, for always believing in my abilities, for continuously motivating me, and for his unwavering support.
+
+My family and friends for standing by my side throughout this journey. All the support meant a lot to me, and I couldn't have done it without them.
