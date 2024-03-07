@@ -5,7 +5,7 @@ Starlight is an online platform for personalized esoteric services! Starlight of
 ![Starlight website shown on a range of devices](/assets/images/docs/responsive.png)  
 
 ## Demo
-The live demo is available [here]()!
+The live demo is available [here](https://starlight-consultations-2b1105ac431c.herokuapp.com/)!
 
 ## Contents
 
@@ -222,6 +222,12 @@ I selected 'Montserrat Alternates' for the body text due to its clean and contem
 The selected images for the website aim to immerse users in the realm of consultations offered by the consultants. I ensured they were of good resolution, seamlessly integrating with the colors and theme of the site. The goal was to provide a visually engaging and cohesive experience, connecting users to the spiritual environment of the consultations while facilitating understanding of the services available for booking through the platform.
 
 ### Wireframes
+
+I developed a simple wireframe, aiming to ensure a consistent experience across mobile devices, computers, and tablets.
+
+I made some adjustments in relation to what I had planned for positioning and added some buttons to enhance functionality and user experience, aiming to ensure the website is accessible and enjoyable on any platform.
+
+![Starlight wireframe](/assets/images/docs/wireframe.png)  
 
 ## Features
 

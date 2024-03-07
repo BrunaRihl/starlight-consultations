@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from website.views import error_404
 
-from website.views import error_404 
 handler404 = error_404
 
 urlpatterns = [

@@ -1,10 +1,8 @@
 import datetime
-
 from django.shortcuts import render, get_object_or_404, redirect
-from booking.forms import BookingForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-
+from booking.forms import BookingForm
 from .models import Booking
 
 # Create your views here.
