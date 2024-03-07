@@ -21,10 +21,10 @@ handler404 = error_404
 
 urlpatterns = [
     path('about/', include('about.urls'), name='about-urls'),
+    path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
+    path('booking/', include('booking.urls')),
     path('summernote/', include('django_summernote.urls')),
     path("", include('website.urls'), name='website-urls'),
-    path('booking/', include('booking.urls')),
-    path('accounts/', include('allauth.urls')),
 
 ]
