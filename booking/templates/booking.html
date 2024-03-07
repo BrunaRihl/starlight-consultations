@@ -6,11 +6,13 @@
   <h2 class="">Booking Content</h2>
   <div class="row justify-content-center"> 
       <div class="col-md-4"> 
+          <!-- Start of booking form -->
           <form method="post" action="{% url 'create_booking' %}" class="mb-3"> 
               {% csrf_token %}
               {{ html_form.as_p }}
               <button type="submit" class="btn btn-primary btn-save">Save</button> 
           </form>
+          <!-- End of booking form -->
       </div>
   </div>
 </section>
@@ -33,12 +35,13 @@
             {% for booking in html_list %}
             <tr>
               <th scope="row">{{ booking.id }}</th>
-              <td>{{ booking.service.name }}</td>
-              <td>{{ booking.booking_date }}</td>
-              <td>{{ booking.booking_time }}</td>
+              <td>{{ booking.service.name }}</td> <!-- Display the name of the service associated with the booking -->
+              <td>{{ booking.booking_date }}</td> <!-- Display the booking date -->
+              <td>{{ booking.booking_time }}</td> <!-- Display the booking time -->
               <td>
-                <a href="{% url 'edit_booking' booking_id=booking.id %}"  class="btn btn-primary btn-edit"><i class="far fa-edit" title="Edit my booking" aria-hidden="true" aria-label="edit"></i></a>
-                <a href="{% url 'delete_booking' booking_id=booking.id %}"  class="btn btn-secondary btn-delete"><i class="far fa-trash-alt" title="Delete my booking" aria-hidden="true" aria-label="delete"></i></a>
+                <!-- Edit and delete buttons for the booking -->
+                <a href="{% url 'edit_booking' booking_id=booking.id %}"  class="btn btn-primary btn-edit"><i class="far fa-edit" aria-hidden="true" aria-label="edit"></i></a>
+                <a href="{% url 'delete_booking' booking_id=booking.id %}"  class="btn btn-secondary btn-delete"><i class="far fa-trash-alt" aria-hidden="true" aria-label="delete"></i></a>
               </td>
             </tr>
             {% endfor %}

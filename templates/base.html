@@ -11,7 +11,7 @@
 <html class="h-100" lang="en">
   <head>
     <title>Starlight Consultations</title>
-    <!-- meta -->
+    <!-- Meta tags-->
     <meta charset="UTF-8" />
     <meta name="language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,7 +39,7 @@
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
-    <!-- error message setup -->
+    <!-- Error Message Display -->
     {% if messages %}
       {% for message in messages %}
         <div class="alert alert-{{ message.tags }}">{{ message }}</div>
@@ -84,8 +84,9 @@
         </div>
       </div>
     </nav>
-
+    <!-- Main Content -->
     <div class="flex-shrink-0 main-bg">
+      <!-- Display user login information here -->
       {% if user.is_authenticated %}
         <p class="text-end m-3">
           You are logged in as <strong>{{ user }}</strong>
@@ -101,14 +102,20 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 light-purple-bg">
+
+      <!-- Display user login information here -->
       <p class="m-0 text-center text-black">
         Follow us: <a href="https://www.facebook.com/" target="_blank" class="btn btn-floating btn-lg"><i class="fab fa-facebook-square ms-3"></i></a>
         <a href="https://www.instagram.com/" target="_blank" class="btn btn-floating btn-lg"><i class="fab fa-instagram-square ms-3"></i></a>
         <a href="https://www.youtube.com/" target="_blank" class="btn btn-floating btn-lg"><i class="fab fa-youtube-square ms-3"></i></a>
       </p>
-      <p class="m-0 text-center text-black copyright">Developed by Bruna Rihl for Portfolio Project 4 - Code Institute, 2024</p>
+      <!-- Copyright information -->
+      <p class="m-0 text-center text-black copyright">
+        Developed by Bruna Rihl for Portfolio Project 4 - Code Institute, 2024
+      </p>
     </footer>
-        
+    
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <!-- font awesome script -->
