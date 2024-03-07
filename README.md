@@ -80,6 +80,11 @@ Administrators:
 
 ### Flowchart
 
+In the planning stage, I drafted a basic structure that depicted the desired functionality and interaction for the project.
+
+As development progressed, I identified elements that needed to be included and others that required a different order of operation. These changes were gradually incorporated into the initial outline. The outline was conceived using the Lucidchart tool.
+
+![Starlight Flowchart](/static/images/docs/flow.png)
 
 ### ERD
 
