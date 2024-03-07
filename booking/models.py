@@ -8,12 +8,13 @@ class Booking(models.Model):
     Model to store information about service bookings.
     This class represents a booking made by a user for a specific service.
     Each booking is associated with a user and a specific service.
+
     **Attributes**
-    `user` (:class:`~django.contrib.auth.models.User`): The user who made the booking.
-    `service` (:class:`~service.models.Service`): The booked service.
-    `booking_date` (:obj:`datetime.date`): The date of the booking.
-    `booking_time` (:obj:`str`): The time of the booking.
-    `message` (:obj:`str`, optional): An optional message associated with the booking.
+    :param user: The user who made the booking (:model:`auth.User`).
+    :param service: The service booked by the user (:model:`booking.Service`).
+    :param booking_date: The date of the booking.
+    :param booking_time: The time of the booking.
+    :param message: Additional message for the booking.
     """
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="booking_user"
