@@ -5,81 +5,88 @@
 <!--Hero Image-->
 
 <div class="hero-image">
-  <img src="{% static 'images/tarot.jpg' %}" alt="Descrição da imagem">
+  <img src="{% static 'images/tarot.jpg' %}" alt="Hands of a fortune teller displaying tarot cards">
   <div class="hero-text ms-3">
     <h1>Welcome to Starlight Consultations!</h1>
     <p>Your gateway to online esoteric consultations. Let our guides illuminate your path and unveil hidden truths. Start your journey with us today.</p>
   </div>
 </div>
 
-<!--Our Team section-->
-
-<section class="margin-top-div">
-  <h2 class= "text-center">
+<!-- Our Team section -->
+<section class="margin-top-div" aria-labelledby="our-team-heading">
+  <!-- Section title -->
+  <h2 id="our-team-heading" class="text-center">
     Our Team
   </h2>
-<div class="container">
-  <div class="row">
-    <article class="col-md-4">
-      <div class="card">
-        <img src={% static 'images/birth-chart-serv.png' %} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-text">Birth Chart - Morgana Luna:</h5>
-          <p class="card-text">
-            Discover the secrets written in the stars with Morgana Luna's personalized birth chart readings. Unveil your destiny and gain insight into your life's journey. 
-          </p>        
+  <!-- Container for the cards -->
+  <div class="container">
+     <div class="row">
+      <!-- Card 1 - Birth Chart -->
+      <article class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/birth-chart-serv.png' %}" class="card-img-top" alt="Illustration of a Birth Chart - Morgana Luna">
+          <div class="card-body">
+            <h3 class="card-text">Birth Chart - Morgana Luna:</h3>
+            <p class="card-text">
+              Discover the secrets written in the stars with Morgana Luna's personalized birth chart readings. Unveil your destiny and gain insight into your life's journey. 
+            </p>        
+          </div>
         </div>
-      </div>
-    </article>
-    <article class="col-md-4">
-      <div class="card">
-        <img src={% static 'images/tarot-serv.png' %} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-text">Tarot Reading - Esmeralda Bruma:</h5>
-          <p class="card-text">
-            Embark on a journey of self-discovery and enlightenment with Esmeralda Bruma's intuitive tarot readings. Gain clarity and guidance for the path ahead.
-          </p>
+      </article>
+      <!-- Card 2 - Tarot Reading -->
+      <article class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/tarot-serv.png' %}" class="card-img-top" alt="Illustration of a Tarot Reading - Esmeralda Bruma">
+          <div class="card-body">
+            <h3 class="card-text">Tarot Reading - Esmeralda Bruma:</h3>
+            <p class="card-text">
+              Embark on a journey of self-discovery and enlightenment with Esmeralda Bruma's intuitive tarot readings. Gain clarity and guidance for the path ahead.
+            </p>
+          </div>
         </div>
-      </div>
-    </article>
-    <article class="col-md-4">
-      <div class="card">
-        <img src={% static 'images/runes-serv3.png' %} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-text">Runes - Ruby Sinclair:</h5>
-          <p class="card-text">
-            Unlock the ancient wisdom of the Runes with Ruby Sinclair. Let the mystical symbols guide you through life's challenges and opportunities.
-          </p>
+      </article>
+      <!-- Card 3 - Runes -->
+      <article class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/runes-serv3.png' %}" class="card-img-top" alt="Illustration of Runes - Ruby Sinclair">
+          <div class="card-body">
+            <h3 class="card-text">Runes - Ruby Sinclair:</h3>
+            <p class="card-text">
+              Unlock the ancient wisdom of the Runes with Ruby Sinclair. Let the mystical symbols guide you through life's challenges and opportunities.
+            </p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
 </section>
-
+<!-- link to learn more about services -->
 <div class="col-md-11 mt-3 justify-content-center text-center">
   <p>
     <i class="fa-solid fa-angles-right  icon-color"></i>
-    To learn more about our services and scheduling for esoteric consultations, click <strong><a class="link" href="{{ about_url }}">here</a></strong> to visit our About page!
+    To learn more about our services and scheduling for esoteric consultations, visit our <strong><a class="link" href="{{ about_url }}" alt="Learn more about our services">About page</a></strong>.
   </p>
 </div>
   
-<!--Book now Image-->
-
+<!-- Book now Section -->
 <section class="container margin-top-div margin-bottom-div">
   <div class="row">
+    <!-- Clock icon -->
     <div class="col-md-4 d-flex justify-content-center justify-content-md-end mb-3 mb-md-0 text-center">
-      <i class="fa-regular fa-clock icon-image"></i>
+      <i class="fa-regular fa-clock icon-image" alt="Clock icon indicating the availability of booking"></i>
     </div>
+    <!-- Text content -->
     <div class="col-md-4 text-center text-md-start">
       <p class="text-center">Looking to schedule your online consultation? Join us on our website and gain exclusive access to book your appointments conveniently and quickly. Register now and start planning your future with ease!</p>
     </div>
+    <!-- Button to initiate booking process -->
     <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
       {% if user.is_authenticated %}
-      <a class="btn btn-secondary btn-lg btn-book" 
-      href="{% url 'create_booking' %}">Book Now!</a>
+      <!-- Button to book now if the user is authenticated -->
+      <a class="btn btn-secondary btn-lg btn-book" href="{% url 'create_booking' %}" aria-label="Book Now">Book Now!</a>
       {% else %}
-      <a class="btn btn-secondary btn-lg btn-book" 
-      href="{% url 'account_login' %}">Login First!</a>
+      <!-- Button to login first if the user is not authenticated -->
+      <a class="btn btn-secondary btn-lg btn-book" href="{% url 'account_login' %}" aria-label="Login First">Login First!</a>
       {% endif %}
     </div>
   </div>

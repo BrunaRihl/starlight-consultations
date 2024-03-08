@@ -23,23 +23,27 @@ h2{
 
 
 /*-- nav style --*/
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold; 
+  }
 
 .brand-first {
     font-family: "Mystery Quest", system-ui;
     font-weight: 600;
     font-size: 2.4rem;
-    color: #4A4A4F;
+    color: #2e2e31;
 }
 
 .brand {
     font-family: "Mystery Quest", system-ui;
     font-weight: 400;
     font-size: 2.4rem;
-    color: #4A4A4F;
+    color: #2e2e31;
 }
 
 .light-purple-bg{
-    background-color: #f8cbfe;
+    background-color: #fce1ff;
 }
 
 .purple-first {

@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-  <section class="container">
+  <section class="container margin-bottom-div">
     <h2>Delete Booking</h2>
     <p>Are you sure?</p>
     <div class="row justify-content-center">
@@ -11,7 +11,7 @@
         <form class="text-center" method="POST" action="{% url 'delete_booking' booking_id %}">
           {% csrf_token %}
           {{ form.as_p }}
-          <button type="submit" class="btn btn-primary">Yes</button>
+          <button type="submit" class="btn-save btn btn-primary">Yes</button>
         </form>
       </div>
     </div>
