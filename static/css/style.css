@@ -215,13 +215,27 @@ h2{
 }
 
 
+/* Additional styles for big screens */
+@media (min-width: 992px) {
+    .navbar.sticky-top {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+  }
+  
 
 /* Additional styles for smaller screens */
 @media (max-width: 995px) {
+    
+    body {
+        padding-top: 0px;
+    }
+    
     .masthead-text h1 {
-        font-size: 170% !important
-      }
-  
+        font-size: 170% !important;
+      }  
 }
 
 @media (max-width: 768px) {
