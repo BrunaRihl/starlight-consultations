@@ -16,6 +16,7 @@ class Booking(models.Model):
     :param booking_time: The time of the booking.
     :param message: Additional message for the booking.
     """
+
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="booking_user"
     )
@@ -25,6 +26,3 @@ class Booking(models.Model):
     booking_date = models.DateField(null=False, blank=False)
     booking_time = models.CharField(null=False, blank=False, max_length=5)
     message = models.CharField(null=True, max_length=200)
-
-
-

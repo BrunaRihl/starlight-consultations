@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Custom 404 view
 def error_404(request, exception):
     """
@@ -8,7 +9,8 @@ def error_404(request, exception):
     **Template**
     :template:`404.html`
     """
-    return render(request, '404.html', status=404)
+    return render(request, "404.html", status=404)
+
 
 # Index page view
 def page_index(request):

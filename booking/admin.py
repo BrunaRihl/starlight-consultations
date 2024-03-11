@@ -21,10 +21,10 @@ class BookingAdmin(admin.ModelAdmin):
     def display_service(self, obj):
         """
         Displays the name of the service associated with the given booking.
-        
+
         Args:
         obj (Booking): The booking object.
-        
+
         Returns:
         str: The name of the associated service.
         """
