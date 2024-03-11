@@ -1,3 +1,8 @@
 [tool.black]
 line-length = 80
 exclude = '.venv'
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "test.settings"
+# -- recommended but optional:
+python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
