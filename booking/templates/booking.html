@@ -24,7 +24,6 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Service</th>
               <th scope="col">Date</th>
               <th scope="col">Time</th>
@@ -34,7 +33,6 @@
           <tbody>
             {% for booking in html_list %}
             <tr>
-              <th scope="row">{{ booking.id }}</th>
               <td>{{ booking.service.name }}</td> <!-- Display the name of the service associated with the booking -->
               <td>{{ booking.booking_date }}</td> <!-- Display the booking date -->
               <td>{{ booking.booking_time }}</td> <!-- Display the booking time -->
