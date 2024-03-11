@@ -1,58 +1,16 @@
 body {
     background-color: #F9FAFC;
+    padding-top: 80px;
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 300;
-  
+    font-weight: 400;
 }
 
 h2{
     font-size: 130%;
 }
 
-.errorlist {
-    color: red;
-}
-
-
-.brand-first {
-    font-family: "Mystery Quest", system-ui;
-    font-weight: 600;
-    font-size: 2.4rem;
-    color: #4A4A4F;
-}
-
-.brand {
-    font-family: "Mystery Quest", system-ui;
-    font-weight: 300;
-    font-size: 2.4rem;
-    color: #4A4A4F;
-}
-
-.light-purple-bg{
-    background-color: #f8cbfe;
-}
-
-.purple-first {
-    color: #a80bb0;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover; 
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    text-align: end; 
-    padding: 20px; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white;
-}
-
-.copyright{
-    font-size: 80%;
+.main-bg {
+    background-color: #F9FAFC;
 }
 
 .margin-top-div{
@@ -63,31 +21,140 @@ h2{
     margin-bottom: 20px !important;
 }
 
+
+/*-- nav style --*/
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold; 
+  }
+
+.brand-first {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #2e2e31;
+}
+
+.brand {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #2e2e31;
+}
+
+.light-purple-bg{
+    background-color: #fce1ff;
+}
+
+.purple-first {
+    color: #a80bb0;
+}
+
+
+/*-- hero style --*/
+
+.hero-image {
+    position: relative;
+    width: 100%; 
+    height: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    right: 0; 
+    transform: translateY(-50%); 
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    width: 80%; 
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+
+/*-- team section --*/
+
 .icon-image{
     font-size: 800%;
     color:#eeaef6;
 }
 
-.thin {
-    font-weight: 300;
+.icon-color{
+    font-size: 130%;
+    color:#eeaef6;
 }
 
-.light-bg {
-    background-color: #fff;
+/*-- footer --*/
+
+.copyright{
+    font-size: 80%;
 }
 
-.dark-bg {
-    background-color: #445261;
+/*-- about page --*/
+
+.scale {
+    width: 100%;
+    height: auto;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 50vh;
+    width: 100%;
+}
+
+.masthead-text {
+    font-family: "Mystery Quest", system-ui;
+    letter-spacing: 5px;
+    background-color: #eeaef6;
+    color: black;
+    padding-left: 30px;
+    padding-top: 150px;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #eeaef6;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(10deg);
+    z-index: 100;
+}
+
+/*-- booking section --*/
+
+.errorlist {
+    border-width: 1px;
+    border-style: double;
+    background-color: #ece3e3;
+    border-color: #c34141;
+    list-style-type: none;
+    font-weight: 400;
+    border-radius: 5px;
 }
 
 
-.profile-image {
-    width: 75%;
-}
+/*-- buttons styles --*/
 
 .btn-save,
 .btn-signup,
@@ -112,37 +179,38 @@ h2{
 
 
 .btn-edit {
-    background-color: #6c5f6c;
-    color: #fff;
-    border-color:#6c5f6c;
+    background-color: #fff;
+    color: #8c778c;
+    border-color:#8c778c;
 
 }
 
 .btn-edit:hover,
 .btn-edit:active {
-    background-color: #fff;
-    color: #6c5f6c;
-    border-color:#6c5f6c;
-}
+    background-color: #8c778c;
+    color: #fff;
+    border-color:#8c778c;}
 
 .btn-delete {
-    color: #fff;
-    background: #bb370b;
+    background-color: #fff;
+    color: #bb370b;
+    border-color:#bb370b;
+
 }
 
 
 .btn-delete:hover,
 .btn-delete:active {
-    background-color: #fff;
-    color: #bb370b;
-    border-color:#bb370b;
+    color: #fff;
+    background: #bb370b;
 }
+
+/*-- login/logout page --*/
 
 .link {
     color: #a80bb0;
     text-decoration: none;
 }
-
 
 .link:hover,
 .link:active {
@@ -151,14 +219,52 @@ h2{
 }
 
 
-.faded {
-    color: rgb(172, 175, 175);
+/* Additional styles for big screens */
+@media (min-width: 992px) {
+    .navbar.sticky-top {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+  }
+  
+
+/* Additional styles for smaller screens */
+@media (max-width: 995px) {
+    
+    body {
+        padding-top: 0px;
+    }
+    
+    .masthead-text h1 {
+        font-size: 170% !important;
+      }  
 }
 
-/* Estilos adicionais para telas menores */
 @media (max-width: 768px) {
     .table th, .table td {
-      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+      font-size: 14px; 
     }
+    .hero-text {
+        padding: 10px;
+    }    
+
+    .masthead {
+        height: auto;
+    }
+    .masthead-text {
+        padding-top: 50px;
+        padding-left: 20px; 
+        text-align: center; 
+    }
+    .masthead-image {
+        text-align: center;
+    }
+    .masthead-image img {
+        width: 80%; 
+    }
+
+
   }
   

@@ -91,4 +91,3 @@ class DeleteBookingViewTest(unittest.TestCase):
         mock_get_object_or_404.assert_called_once_with(
             Booking, pk=booking_id, user=request.user
         )
-
