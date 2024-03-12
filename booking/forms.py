@@ -145,7 +145,7 @@ class BookingForm(forms.ModelForm):
             booking_date=booking_date,
             booking_time=cleaned_data.get("booking_time"),
         ).exists():
-            # Check if the consultant is available on the selected date and time
+            # Check if the consultant is available on the selected date/time
             raise ValidationError(
                 "Consultant is not available on this day/time."
             )
