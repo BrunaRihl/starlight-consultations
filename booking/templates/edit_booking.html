@@ -3,14 +3,17 @@
 {% load static %}
 
 {% block content %}
-<section class="container"> 
-  <h2 class="">Booking Content</h2>
+<section class="container text-center"> 
+    <h2>Edit Booking</h2>
+    <p>Update the details of your booking:</p>
   <div class="row justify-content-center"> 
       <div class="col-md-6"> 
           <form method="post" action="{% url 'edit_booking' booking_id %}" class="mb-3"> 
               {% csrf_token %}
               {{ html_form.as_p }}
-              <button type="submit" class="btn btn-primary btn-save">Save</button> 
+              <button type="submit" class="btn btn-primary btn-save" aria-label="Confirm edit booking">Save</button>
+              <a href="{% url 'create_booking' %}" class="btn-cancel btn btn-secondary" aria-label="Cancel edit and go back to booking page">Cancel</a>
+    
           </form>
       </div>
   </div>
