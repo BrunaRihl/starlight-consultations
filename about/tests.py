@@ -1,15 +1,14 @@
-# Create your tests here.
+from datetime import datetime
 import unittest
 from unittest.mock import MagicMock, patch
 from django.test import RequestFactory
 from about.views import about_me
-from datetime import datetime
 
 
 class AboutListViewTest(unittest.TestCase):
     def setUp(self):
         """
-        Set up the test environment by initializing common resources.
+        Set up the test environment.
         """
         self.request_factory = RequestFactory()
         self.mocked_about = [
@@ -24,7 +23,12 @@ class AboutListViewTest(unittest.TestCase):
     @patch("about.views.About.objects.all")
     def test_about_me_view(self, mock_about):
         """
-        Test case for the about_me view.
+        Test the about_me view function.
+        Mocks the behavior of About.objects.all() to return a
+        MagicMock object.
+        Sends a GET request to the about_me view and checks
+        if the response status code is 200.
+
         """
         mock_about.return_value = MagicMock()
 

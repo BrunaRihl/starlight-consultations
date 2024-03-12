@@ -32,6 +32,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG mode configuration:
+# Sets the Django debug mode based on the DEBUG environment variable.
+# When DEBUG is set to "1", debug mode is enabled (DEBUG = True).
+# Otherwise, debug mode is disabled (DEBUG = False).
 DEBUG = True if os.environ.get("DEBUG") == "1" else False
 
 ALLOWED_HOSTS = [

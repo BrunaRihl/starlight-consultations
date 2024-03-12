@@ -1,10 +1,7 @@
 from django.http import Http404
-
-# Create your tests here.
 import unittest
 from unittest.mock import patch, MagicMock
 from booking.models import Booking
-
 from booking.views import delete_booking
 
 
@@ -15,7 +12,9 @@ class DeleteBookingViewTest(unittest.TestCase):
         self, mock_messages_success, mock_get_object_or_404
     ):
         """
-        Test case for the delete_booking view.
+        Test deleting a booking.
+        Checks if the booking is deleted and if a success message
+        is displayed.
         """
         user = MagicMock()
         booking_id = 1
@@ -47,7 +46,9 @@ class DeleteBookingViewTest(unittest.TestCase):
     @patch("booking.views.get_object_or_404")
     def test_delete_booking_view_not_post(self, mock_get_object_or_404):
         """
-        Test case for the delete_booking_view not post
+        Test deleting a booking when the request method is not POST.
+        Verifies if the view returns an HTTP 200 status code when the
+        request is not POST.
         """
         user = MagicMock()
         booking_id = 1
@@ -74,7 +75,10 @@ class DeleteBookingViewTest(unittest.TestCase):
         self, mock_get_object_or_404
     ):
         """
-        Test case for the delete_booking view not found
+        Test deleting a booking when the booking is not found.
+        Verifies if the view raises a Http404 when the booking
+        is not found.
+
         """
         user = MagicMock()
         booking_id = 1
