@@ -519,34 +519,27 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 
 ### Validator Testing  
 
-#### Python PEP8 Validation 
+  * Python
 
-To ensure compliance with coding best practices, I used the PEP8 validator to identify and rectify any issues in my code. 
-The identified errors were primarily related to improper use of whitespace, punctuation, and exceeding line length. All of these issues have been appropriately addressed, ensuring adherence to coding best practices.
-   
+To ensure compliance with coding best practices, I installed Flake8 in my development environment. Flake8 assisted me in identifying and rectifying style and formatting issues throughout the project's source code.
+
+Additionally, I utilized the PEP8 validator to identify and correct any remaining issues in my code. The identified errors were primarily related to improper use of whitespace and exceeding line length. All of these issues were addressed comprehensively, ensuring adherence to coding best practices.
+
+
   * CSS:  
 
-No errors were found during the validation process using the official Jigsaw validator. 
+No errors were found during the validation process using the official Jigsaw validator.
 
 
 ![Jigsaw validator - Css](/assets/docs/pep8ci-run1.png)
 
-![Jigsaw validator - Css solved](/assets/docs/pep8ci-run2.png) 
 
   * HTML:  
 
-No errors were found during the validation process using the official W3C validator.  
-
-
-![W3C validator - data.py](/assets/docs/pep8ci-data.png)
+To ensure the validity and compliance of my web pages with web standards, I used the W3C validator. This tool helped me identify and correct any errors highlighted in my pages.
 
 ![W3C validator - data.py solved](/assets/docs/pep8ci-data1.png) 
 
-  * Python:
-
-![PEP8 Validation - data.py](/assets/docs/pep8ci-data.png)
-
-![PEP8 Validation - auth.py solved](/assets/docs/pep8ci-auth.png) 
 
 The corrections were implemented in accordance with the validator's suggestions.
 
