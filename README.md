@@ -32,6 +32,7 @@ The live demo is available [here](https://starlight-consultations-2b1105ac431c.h
   * [Accessibility](#accessibility)
 
 * [Testing](#testing)
+  * [User Story Test Plan](#user-story-test-plan)
   * [Tested Browsers and Devices](#tested-browsers-and-devices)
   * [Manual Testing](#manual-testing)
   * [Validator Testing](#validator-testing)
@@ -396,6 +397,35 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 
 ## Testing 
 
+### User Story Test Plan: 
+
+| User Story | Test Scenario | Test Steps | Expected Result | Actual Result |
+|------------|---------------|------------|-----------------|---------------|
+**`EPIC 1`**
+| Early deployment | Verify the deployment process | 1. Deploy the initial version of the application on Heroku. 2. Access the deployed application. | The application is successfully deployed and accessible on Heroku. | Pass |
+| Setting Up Initial Django Project Structure | Ensure the correct setup of Django project structure | 1. Create a new Django project with proper structure. 2. Verify the project structure. | The Django project is properly configured with the required structure. | Pass |
+| Database Integration | Test database connectivity and media storage | 1. Perform database operations (e.g., CRUD) and file uploads. 2. Check if data is stored correctly in the database and files are uploaded and accessible. | Data is successfully stored in the database, and files are uploaded and accessible. | Pass |
+**`EPIC 2`**
+| Website Administration Control | Manage users, content, and settings | 1. Log in as an administrator. 2. Access the administrative interface. 3. Perform user management, content moderation, and configuration tasks. | Administrators can efficiently manage users, content, and settings. | Pass |
+| Administrative Interface | Test the usability of the administrative interface | 1. Navigate through the administrative interface. 2. Perform common tasks such as user management and content editing. | The administrative interface is intuitive and efficient to use. | Pass |
+**`EPIC 3`**
+| View About Page | Access the "About" page | 1. Navigate to the "About" page. 2. Check if relevant information is displayed. | The "About" page displays relevant information about the company, team, services. | Pass |
+| Manage About Page Content | Edit and update the content of the "About" page | 1. Log in as an administrator. 2. Access the administrative interface. 3. Edit the content of the "About" page. | The content of the "About" page is successfully edited and updated. | Pass |
+**`EPIC 4`**
+| Make Online Booking | Make a booking for a service offered on the website | 1. Navigate to the booking section of the website. 2. Select a service and schedule a consultation. | The booking is successfully made for the selected service. | Pass |
+| Manage Bookings | Access the admin dashboard to manage bookings | 1. Log in as an administrator. 2. Access the admin dashboard. 3. Manage bookings (view, edit, delete). | Administrators can efficiently manage bookings from the admin dashboard. | Pass |
+**`EPIC 5`**
+| Register Account | Create a new user account | 1. Navigate to the registration page. 2. Fill out the registration form and submit. | A new user account is successfully created. | Pass |
+| User Login | Log in to the user account | 1. Navigate to the login page. 2. Enter valid credentials and log in. | The user is successfully logged in to their account. | Pass |
+| User Logout | Log out of the user account | 1. Click on the logout button. | The user is successfully logged out of their account. | Pass |
+**`EPIC 6`**
+| Website Accessibility | Ensure accessibility features are implemented | 1. Use assistive technologies to navigate the website. 2. Verify if all content is accessible and usable. | The website is accessible and usable for users. | Pass |
+| Accessible Features | Test the implementation of accessible features | 1. Verify the implementation of accessible features (e.g., alt text for images, contrast colors..). | Accessible features are implemented correctly and enhance user experience. | Pass |
+**`EPIC 7`**
+| README Documentation | Check the README.md file | 1. Read the README.md file. 2. Verify if it contains comprehensive information about the project. | The README.md file provides detailed information about the project's purpose, functionality, and usage. | Pass |
+**`EPIC 8`**
+| Testing Procedures | Verify testing procedures | 1. Follow the documented testing procedures. 2. Perform backend and frontend tests. 3. Gather user feedback for UI improvements. | Testing procedures are thorough and ensure the quality and usability of the software. | Pass |
+
 ### Tested Browsers and Devices: 
 
 * Web Browsers: 
@@ -437,7 +467,6 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | **`Navbar`** |
-|  |  |  |  |  |
 | StarLight Logo | When clicked the user will be redirected to the home page. | Clicked Logo | Redirected to the home page. | Pass |
 | Menu-hover | When hovering over the menu items, the text should appear in bold to indicate action.| Hover over menu | text appear in bold. | Pass |
 | Navbar links | When clicked the user will be redirected to the correct page.| Clicked link | Redirected to the correct page. | Pass |
@@ -446,20 +475,16 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Fixed navbar | The navbar should remain fixed at the top of the page while scrolling through the site content. | Scrolled through the site content and observed the navbar behavior. | The navbar remained fixed at the top of the page while scrolling. | Pass |
 | Authentication Status Display | The website displays a message below the navigation bar indicating whether the user is logged in or not. | Verified the message display below the navigation bar while logged in and logged out. | Message displayed correctly indicating the authentication status. | Pass |
 | **`Register`** |
-|  |  |  |  |  |
 | User Registration | After submitting valid data for registration, the user should be prompted to confirm their password, ensuring accuracy. The username must be unique and not already in use, and the optional email field must be in a valid format. | Entered valid registration data and verified the password confirmation request, uniqueness of the username, and valid email format. | The password confirmation request appeared, the unique username was accepted, and the valid email format was enforced. | Pass |
 | Registration Redirection | Upon successful registration, the user should be redirected to the home page and receive a notification confirming that they are logged in. | Successfully registered a new account and observed redirection to the home page with a logged-in notification. | Redirected to the home page and received a logged-in notification after successful registration. | Pass |
 | Registration with Invalid Data | If the user attempts to register an account with invalid data, such as duplicate information or an incorrect password, the registration will not be completed, and an error message will be displayed in the form. | Attempted registration with duplicate data or incorrect password. | Received error message in the form. | Pass |
 | **`Login`** |
-|  |  |  |  |  |
 | User Login | After entering valid credentials and submitting the login form, the user should be redirected to the homepage and receive a confirmation message indicating successful login. | Entered valid credentials and submitted the login form. | Redirected to the homepage and received confirmation message indicating successful login. | Pass |
 | Authenticated User Menus | When logged in, exclusive menus for authenticated users should appear, and the option to schedule an appointment becomes available. | Logged in with valid credentials and observed the appearance of exclusive menus. | Exclusive menus appeared, and appointment scheduling option became available. | Pass |
 | **`Log Out`** |
-|  |  |  |  |  |
 | User Logout | After clicking on the logout button, the user should be redirected to a confirmation page. | Clicked on the logout button and confirmed redirection to the confirmation page. | Redirected to the confirmation page. | Pass |
 | User Logout Redirect | After confirming the logout, the user should be redirected to the home page. | Confirmed logout and checked for redirection to the home page. | Redirected to the home page after logout confirmation. | Pass |
 | **`Booking`** |
-|  |  |  |  |  |
 | User able to select the service | User should be able to select the desired service when booking a consultation | Selected the desired service on the booking page | Service selected successfully | Pass |
 | Select the date | User should be able to choose the desired date for the consultation | Selected a date on the booking page | Date was successfully selected | Pass |
 | Select the time | User should be able to choose the preferred time for the consultation | Chose a time slot on the booking page | Time was successfully selected | Pass |
@@ -470,12 +495,10 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Delete booking | User should be able to remove their bookings if needed | Attempted to delete a booked consultation | Booking was successfully deleted | Pass |
 | Save booking in booking page | User's bookings should be saved and displayed on the booking page | Scheduled a consultation and checked if it appeared on the booking page | Booking was saved and appeared on the booking page | Pass |
 | **`Home`** |
-|  |  |  |  |  |
 | Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Book Now" Button | Redirected to the login page. | Pass |
 | Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass |
 | Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
 | **`About`** |
-|  |  |  |  |  |
 | Text Loading  | The text on the "About" page should match the content entered in the admin panel. | Compared displayed text with admin panel content. | Text matched admin panel content. | Pass |
 | Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass |
 | Updated Date    | Creation date of the text displayed at the bottom of the page. | Checked if the displayed date matches the creation date of the text. | Date displayed matched the creation date of the text. | Pass |
@@ -483,14 +506,14 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass | 
 | Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
 | **`Admin`** |
-|  |  |  |  |  |
 | Login to Django Panel | The admin should be able to log in to the Django panel using the provided credentials. | Logged in to the Django panel using admin credentials | Successfully accessed the Django panel | Pass |
 | Add, Edit, and Delete Services | The admin should be able to add, edit, and delete services from the website. | Added, edited, and deleted services from the admin panel | Successfully managed services | Pass |
 | Edit and Delete Bookings | The admin should be able to edit and delete bookings from the admin panel. | Edited and deleted bookings from the admin panel | Successfully managed bookings | Pass |
 | Add, Edit, and Delete Content of About Page | The admin should be able to add, edit, and delete content on the About page from the admin panel. | Added, edited, and deleted content on the About page from the admin panel | Successfully managed About page content | Pass |
 | New Menu in Navbar| When logged in as an admin, a new menu should appear in the navbar allowing direct access to the admin control panel, redirecting the admin to the panel. | Logged in as an admin and observed the appearance of a new menu in the navbar | New menu appeared in the navbar, providing access to the admin control panel | Pass |
+| **`Notification messages`** |
+| Notification messages | Clear and informative messages are displayed upon registration, login, logout, adding, editing, or deleting bookings. | Perform registration, login, logout, adding, editing, or deleting bookings. Verify if clear and informative messages are displayed on the screen confirming the actions taken. | Messages displayed successfully. | Pass      |
 | **`Footer`** |
-|  |  |  |  |  |
 | Icon-clicked | Clicking on social network icons in the footer opens new windows directing users to the respective social networks.| Clicked social networks Icons | Opens the pages in a new window. | Pass |
 
 
