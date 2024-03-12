@@ -863,11 +863,13 @@ I created  the content for my application.
 
 [Favicon.io](https://favicon.io/favicon-converter/): utilized to convert the star image from the logo into a favicon.
 
+[CloudConvert](https://cloudconvert.com/png-to-webp): utilized for image format conversion.
+
 [Adobe Express](https://www.adobe.com/br/express/feature/image/resize): utilized for image manipulation and resizing.
 
 MS Paint: used to edit the images. 
 
-PowerPoint: Utilized to create the design for my game project.
+[Balsamiq](https://balsamiq.com/): utilized for wireframing purposes.
 
 [Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): utilized to create the color palette. 
 
