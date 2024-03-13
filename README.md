@@ -2,7 +2,7 @@
 
 Starlight is an online platform for personalized esoteric services! Starlight offers a variety of services, including tarot readings, rune interpretation, and astrological chart creation available conveniently and affordably directly on the website. Users can register and schedule consultations online with ease, ensuring a personalized and seamless experience.
 
-![Starlight website shown on a range of devices](/assets/images/docs/responsive.png)  
+![Starlight website shown on a range of devices](/static/images/docs/responsive.png)  
 
 ## Demo
 The live demo is available [here](https://starlight-consultations-2b1105ac431c.herokuapp.com/)!
@@ -88,6 +88,8 @@ As development progressed, I identified elements that needed to be included and 
 ![Starlight Flowchart](/static/images/docs/flow.png)
 
 ### ERD
+
+![Starlight ERD](/static/images/docs/erd.jpg)
 
 
 ## User Stories
@@ -233,7 +235,56 @@ I developed a simple wireframe, aiming to ensure a consistent experience across 
 
 I made some adjustments in relation to what I had planned for positioning and added some buttons to enhance functionality and user experience, aiming to ensure the website is accessible and enjoyable on any platform.
 
-![Starlight wireframe](/assets/images/docs/wireframe.png)  
+#### Desktop
+<details>
+  <summary>Home
+</summary>
+
+![Starlight wireframe](/static/images/docs/home-desk.webp)  
+
+</details>
+<details>
+  <summary>About
+</summary>
+
+![Starlight wireframe](/static/images/docs/about-desk.webp)  
+
+</details>
+
+</details>
+<details>
+  <summary>Booking
+</summary>
+
+![Starlight wireframe](/static/images/docs/book-desk.webp)  
+
+</details>
+
+
+#### Mobile
+<details>
+  <summary>Home
+</summary>
+
+![Starlight wireframe](/static/images/docs/home-mob.webp)  
+
+</details>
+<details>
+  <summary>About
+</summary>
+
+![Starlight wireframe](/static/images/docs/about-mob.webp)  
+
+</details>
+
+</details>
+<details>
+  <summary>Booking
+</summary>
+
+![Starlight wireframe](/static/images/docs/book-mob.webp)  
+
+</details>
 
 ## Features
 
@@ -242,39 +293,65 @@ The website comprises three primary pages: a welcoming home page, an informative
 ### Navigation bar 
 
 * All pages feature a responsive navigation bar at the top of the screen.
+
+![Starlight nav](/static/images/docs/nav-not-log.webp)  
+
 * In the top-left corner, the site's logo is displayed, allowing users to return to the homepage with a single click.
-* Navigation adaptation on smaller screens such as tablets and smartphones is automatic. These features were implemented using the Bootstrap framework, ensuring smooth and responsive navigation.
-* On mobile devices, the navigation bar is transformed into a hamburger menu to optimize the user experience.
+* Navigation adaptation on smaller screens such as tablets and smartphones is automatic. These features were implemented using the Bootstrap framework, ensuring smooth and responsive navigation. On mobile devices, the navigation bar is transformed into a hamburger menu to optimize the user experience.
+
+![Starlight nav](/static/images/docs/nav-mob.png)  
+
 * The menu provides links to the main pages of the site, including Home, About, Booking, Register, and Login/Logout.
 * To assist users in navigating the site, a visual effect has been added to highlight menu items when the mouse cursor hovers over them.
 * The "Booking" option is displayed only for logged-in users, remaining hidden for non-authenticated users.
+
+![Starlight nav](/static/images/docs/nav-login.webp)  
+
 * Additionally, when the superuser is logged in, an additional option is provided in the menu, allowing direct access to the administrative control panel.
 
-![Starlight nav bar](/assets/images/nav.jpg)
+![Starlight nav](/static/images/docs/nav-admin.webp)  
 
 #### Authentication Status
 
 A functionality has been implemented on the website that displays a message below the navigation bar, informing whether the user is logged in or not. This message allows users to easily identify their authentication status while browsing the site.
 
+* Logged in:
 
-![Starlight auth](/assets/images/auth.jpg)
+![Starlight auth](/static/images/docs/auth-log.webp)
+
+* Not logged in:
+
+![Starlight auth](/static/images/docs/auth-not-log.webp)
 
 
 ### Sign Up Page
 
-- On the registration page, new users can start their journey on Starlight by creating a personalized account. Here, users provide essential information such as name, email address (optional), and password to establish their identity in the system. During the registration process, each user is prompted to choose a unique username, ensuring uniqueness among all accounts. Additionally, the system checks if the provided email address has not already been registered.
+- On the registration page, new users can start their journey on Starlight by creating a personalized account. Here, users provide essential information such as name, email address (optional), and password to establish their identity in the system.
 
+![Starlight sign up](/static/images/docs/signup.webp)
+
+- During the registration process, each user is prompted to choose a unique username, ensuring uniqueness among all accounts. Additionally, the system checks if the provided email address has not already been registered.
+
+![Starlight sign up](/static/images/docs/signup-error.webp)
 
 ### Login Page
 - On the login page, registered users can access their existing accounts on Starlight. Using a simple form, users input their credentials, including username and password, to sign into the system. Once authenticated, users have immediate access to the site's personalized features, allowing them to explore and utilize the available functionalities.
+
+![Starlight sign up](/static/images/docs/login.webp)
 
 ### Logout Page
 
 -  The logout page provides users with a convenient way to end their sessions on Starlight. By clicking the "Logout" button, users are logged out of their accounts, ensuring the privacy and security of their information. Upon logout completion, users are redirected to a confirmation page and then to the homepage, providing a seamless and secure experience.
 
+![Starlight logout](/static/images/docs/signout.webp)
+
 #### Notification messages
 
 Starlight displays warning messages at crucial moments of user interaction with the platform. Upon successfully completing registration, logging in, or logging out, clear and informative messages are displayed on the screen to confirm the actions taken. These messages provide immediate feedback to the user, ensuring an intuitive and transparent user experience.
+
+![Starlight notifications](/static/images/docs/signout-mess.webp)
+
+![Starlight notifications](/static/images/docs/login-mess.webp)
 
 ### Home Page 
 
@@ -282,14 +359,15 @@ Starlight displays warning messages at crucial moments of user interaction with 
 
 A website features a custom favicon that has been added to the browser's header. The favicon showcases a moon and a star, matching the theme and colors of the site, providing a unique visual identity for it.
 
-![StarLight - favicon](/assets/images/docs/favicon-zp.png)
+![StarLight - favicon](/static/images/docs/favicon-docs.webp)
+
 
 #### Header: 
 
 * The main image showcases hands manipulating a tarot card deck, aligning with the central theme of the site about tarot readings, rune consultations, and interpretations of astral maps.
 * The overlaid message provides a brief introduction to the website's concept, while the high resolution and vibrant colors ensure an inviting presentation to visitors.
 
-![Starlight - image hero](/assets/images/hero.jpg)
+![Starlight - image hero](/static/images/docs/header.webp)
 
 #### Sections: 
 
@@ -299,40 +377,47 @@ A website features a custom favicon that has been added to the browser's header.
 
   * Using Bootstrap cards, each service is presented concisely, providing an overview of what the site offers to users.
 
-![Starlight Our Team](/assets/images/about-choose.jpg)
+![Starlight Our Team](/static/images/docs/our-team.webp)
 
 
 * Additionally, there's a "Book Now" section, where users can schedule consultations directly through the site.
 
   * If the user is logged in, a "Book Now" button is displayed, allowing them to proceed with scheduling.
 
+![Starlight book now](/static/images/docs/book-sect-login.webp)
+
   * If the user is not logged in, a "Login First" button is shown, prompting them to log in before booking an appointment.
 
 
-![Starlight book now](/assets/images/about-choose.jpg)
+![Starlight book now](/static/images/docs/book-sect.webp)
 
 
 ### About: 
 
 The "About" page provides a detailed insight into the purpose and services available on the site. 
 
-* Key Highlights:
+#### Key Highlights:
   * Flexible Content: The administrator can easily update the content of the "About Us" page using the Django admin panel.
 
   * The featured image on the "About" page is customizable using Cloudinary. This allows the page administrator to easily upload and edit the image to reflect the identity of their company or brand.
+
+![Starlight about](/static/images/docs/about-page.webp)
 
   * Update Information: The date of the last update is displayed on the page so that visitors know when the content was last revised.
 
   * If the user is logged in, a "Book Now" button is displayed, if the user is not logged in, a "Login First" button is shown.
 
 
-![Starlight about](/assets/images/services.jpg)
-![Starlight about](/assets/images/packages.jpg)
+![Starlight about](/static/images/docs/about-not-log.webp)
+
+![Starlight about](/static/images/docs/about-log.webp)
 
 
 ### Booking:
 
 The Booking section offers users the opportunity to schedule appointments with consultants. This feature is accessible from the navigation bar and is only displayed when the user is logged in. Upon accessing the Appointment page, users are presented with a simple form to schedule their appointments.
+
+![Starlight booking page](/static/images/docs/book-form.webp)
 
 #### Key Features:
 
@@ -344,15 +429,31 @@ The Booking section offers users the opportunity to schedule appointments with c
 
 * Appointment Confirmation: After filling out all the necessary details, users can save the appointment by clicking the "Save" button.
 
+![Starlight booking page](/static/images/docs/book-save.png)
+
 * Conflicting Times: Upon submission of the appointment scheduling form, if the selected time slot is already booked by another user, a message will be displayed informing the user that the chosen time slot is not available.
+
+![Starlight booking page](/static/images/docs/booking-err.webp)
 
 * Informative Messages: When users perform actions such as updating, creating, or deleting appointments, informative messages are displayed on the appointment list page, confirming the success of the operation or providing feedback in case of errors.
 
+![Starlight booking page](/static/images/docs/book-save.png)
+
+![Starlight booking page](/static/images/docs/delete-mess.webp)
+
+![Starlight booking page](/static/images/docs/edit-mess.webp)
+
+
 * Viewing and Management: Below the scheduling form, a table displays all scheduled appointments, including date, time, and selected service. Users can delete or edit their appointments using the corresponding buttons next to each entry.
 
-* Appointment Deletion: Users have the ability to remove appointments from their schedule, and before deletion is finalized, a confirmation is requested to ensure that the user truly wants to remove the appointment.
+![Starlight booking page](/static/images/docs/bookings.webp)
 
-![Starlight booking page](/assets/images/gallery.jpg)
+* Appointment Deletion and update: Users have the ability to remove or update appointments from their schedule, and before deletion is finalized, a confirmation is requested to ensure that the user truly wants to remove the appointment.
+
+![Starlight booking page](/static/images/docs/edit-book.webp)
+
+![Starlight booking page](/static/images/docs/delete-book.webp)
+
 
 
 ### The footer: 
@@ -363,12 +464,14 @@ The Booking section offers users the opportunity to schedule appointments with c
 
 * Clicking on these icons will open the links in new tabs for ease of navigation.  
 
-![Starlight footer](/assets/images/footer.jpg)  
+![Starlight footer](/static/images/docs/footer.webp)  
 
 
 ### 404 Page:
 
 Developed a custom 404 error page to properly handle situations where users accessed non-existent pages or encountered broken links. This page provides clear navigation options to assist users in returning to the main site.
+
+![Starlight 404](/static/images/docs/404-page.webp)  
 
 
 ### Features and resources to be added in the future  
@@ -385,15 +488,10 @@ From the project's inception, the game website's design has been planned with a 
 
 ### LightHouse 
 
-The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools.
+The accessibility, performance, best practices, and SEO (Search Engine Optimization) of the website were analyzed using the LightHouse tool available in Google Chrome's DevTools. Additionally, I ensured that all pages achieved 100% accessibility.
 
-  * Desktop
+![Starlight 404](/static/images/docs/light-mob.png)  
 
-![LightHouse - desktop](/assets/images/docs/lighthouse.png)
-
-  * Mobile
-  
-![LightHouse - Mobile](/assets/images/docs/lignthouse-mobile.png)  
 
 ## Testing 
 
@@ -525,20 +623,21 @@ To ensure compliance with coding best practices, I installed Flake8 in my develo
 
 Additionally, I utilized the PEP8 validator to identify and correct any remaining issues in my code. The identified errors were primarily related to improper use of whitespace and exceeding line length. All of these issues were addressed comprehensively, ensuring adherence to coding best practices.
 
+![Pep8 - Python](/static/images/docs/python-check.webp)
 
   * CSS:  
 
 No errors were found during the validation process using the official Jigsaw validator.
 
 
-![Jigsaw validator - Css](/assets/docs/pep8ci-run1.png)
+![Jigsaw validator - Css](/static/images/docs/jigsaw-valid.webp)
 
 
   * HTML:  
 
 To ensure the validity and compliance of my web pages with web standards, I used the W3C validator. This tool helped me identify and correct any errors highlighted in my pages.
 
-![W3C validator - data.py solved](/assets/docs/pep8ci-data1.png) 
+![W3C validator - data.py solved](/static/images/docs/html-check.webp)
 
 
 The corrections were implemented in accordance with the validator's suggestions.
