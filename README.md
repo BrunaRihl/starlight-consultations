@@ -89,6 +89,8 @@ As development progressed, I identified elements that needed to be included and 
 
 ### ERD
 
+In order to provide a clear visual representation of the database structure, an Entity-Relationship Diagram (ERD) was developed using a Database Designer tool.
+
 ![Starlight ERD](/static/images/docs/erd.jpg)
 
 
