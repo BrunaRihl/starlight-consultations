@@ -639,10 +639,16 @@ No errors were found during the validation process using the official Jigsaw val
 
 To ensure the validity and compliance of my web pages with web standards, I used the W3C validator. This tool helped me identify and correct any errors highlighted in my pages.
 
-![W3C validator - data.py solved](/static/images/docs/html-check.webp)
+![W3C validator - html](/static/images/docs/html-check.webp)
 
 
 The corrections were implemented in accordance with the validator's suggestions.
+
+#### Unit Test 
+
+I used unit tests to ensure the proper functioning of different parts of the application. The unit tests were implemented using Python's unittest module.
+
+![unittest - python](/static/images/docs/unittest.png)
 
 ### Bugs
 
