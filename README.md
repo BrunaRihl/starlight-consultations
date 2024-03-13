@@ -653,45 +653,52 @@ I used unit tests to ensure the proper functioning of different parts of the app
 ### Bugs
 
 #### Solved Bugs
+#### Inconsistent Favicon Display
 
-#### 
+  * Bug Description: 
 
-  * Bug Description:
-
-
-![bug - ](/assets/docs/bug1.png)
-
+While developing a website with Django, I noticed that the favicon defined in the `base.html` file was only being displayed on the homepage (index). However, on other pages, such as about and booking page, the favicon was not appearing.
 
   * Action Taken:
 
+Upon further investigation, I found that the issue was related to the relative path of the favicon specified in the `base.html` file. To ensure that the favicon is loaded on all pages of the site, regardless of the current URL, I adopted the following approach:
 
-![Solved bug - ](/assets/docs/bug1-solved.png)
+In the `base.html` file, I updated the `<link>` tag to reference the favicon using the absolute path relative to the project's root directory, using Django's `{% static %}` tag:
 
-#### Naming Conflict
+```html
+<link rel="icon" type="image/ico" sizes="32x32" href="{% static 'images/favicon.ico' %}" />
+```
+![bug - 1](/static/images/docs/bug3-2.png)
 
-  * Bug Description:
-
-
-  * Action Taken:
-
-
-
-![Solved bug - ](/assets/docs/bug2.png)
+![Solved bug - 1](/static/images/docs/bug3.png)
 
 
-#### Disruption of program name ASCII art
+
+#### Replace Date Mask with Current Date on Booking
 
   * Bug Description:
 
-
-![bug - ](/assets/docs/bug3-1.png)
-
+A bug was identified where the date mask was not being set correctly on the booking form, causing issues with selecting the date.
 
   * Action Taken:
 
+This issue has been fixed by replacing the date mask with the current date on the booking form.
+This fix ensures that users can now select the date accurately without any errors.
 
-![Solved bug - ](/assets/docs/bug3-solved.png)
+![bug 2 solved](/static/images/docs/bug1.png)
 
+#### Overlay Text Box Misalignment
+
+  * Bug Description: 
+  
+I identified an issue where the text box was becoming misaligned over the main image of the site, depending on the screen size. When the menu was opened, it would shift out of place.
+
+
+  * Action Taken: 
+  
+The problem has been fixed by adding various media query configurations and testing across different screen sizes. This fix ensures that the text box now remains properly aligned over the main image at all screen resolutions.
+
+![bug 3 solved](/static/images/docs/bug2.png)
 
 
 #### Unsolved Bugs
