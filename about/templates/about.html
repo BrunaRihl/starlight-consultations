@@ -11,9 +11,9 @@
         </div>
         <div class="d-none d-md-block col-md-9 masthead-image">
           {% if 'placeholder' in about.featured_image.url %}
-            <img src="{% static 'images/about.png' %}" class="scale" alt="placeholder" />
+            <img src="{% static 'images/about.png' %}" class="scale" alt="placeholder" >
           {% else %}
-            <img src="{{ about.featured_image.url }}" class="scale" alt="{{ about.title }}" />
+            <img src="{{ about.featured_image.url }}" class="scale" alt="{{ about.title }}" >
           {% endif %}
         </div>
       </div>
@@ -39,7 +39,7 @@
           {% endif %}
         </div>
         <!-- Updated on field -->
-        <br />
+        <br>
         <p class="text-end">
           <em>Updated on: {{ about.updated_on }}</em>
         </p>
