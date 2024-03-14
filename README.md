@@ -486,7 +486,7 @@ A custom 404 error page was developed to properly handle situations where users 
 
 ### Accessibility
 
-From the project's inception, the game website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
+From the project's inception, the website's design has been planned with a focus on accessibility. Special attention has been given to ensuring good color contrast, an easily understandable structure, and intuitive navigation, establishing a solid foundation for the user experience.
 
 ### LightHouse 
 
