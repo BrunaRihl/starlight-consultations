@@ -169,7 +169,7 @@ As a user, I can to be able to log out of my account so that I can securely end 
 
 #### EPIC 6: Accessibility
 
-The Accessibility epic aims to ensure that the website is accessible to all users, regardless of their abilities or needs. This involves implementing features and practices that make the site easy to use and understand for all users, including those with visual, auditory, or motor impairments. 
+The Accessibility epic aims to ensure that the website is accessible to all users, regardless of their abilities or needs. This involves implementing features and practices that make the site easy to use and understand for all users. 
 
 
   * User Story: Website Accessibility
@@ -184,11 +184,12 @@ As a developer, I can implement accessible features on the website to ensure a p
 
 #### EPIC 7: Project Documentation
 
-The Project Documentation epic aims to create comprehensive documentation that clearly explains the purpose, functionality, and usage of the project. This includes crafting a README.md file to provide detailed information about the project, facilitating understanding and collaboration among users and contributors. 
+The Project Documentation epic aims to create comprehensive documentation that clearly explains the purpose, functionality, and usage of the project. This includes crafting a README.md file to provide detailed information about the project. 
 
   * User Story: README Documentation
 
-As a developer, I can create a README.md file to document and present the project to users and collaborators so that they can easily understand the purpose, functionality, and usage of the project.
+As a developer, I can create a README.md file to document and present the project, ensuring that everyone can easily understand the purpose, functionality, and usage of the project.
+
 
 #### EPIC 8: Project Testing
 
@@ -201,10 +202,11 @@ As a developer, I can thoroughly test the project so that I can ensure its quali
 
 ### Agile development
 
-During the project development, I adopted an agile methodology, utilizing Kanban to manage my activities and projects. Kanban provided a clear view of the workflow, allowing me to track task progress visually and in real time. I organized my project on GitHub, using a Kanban board to divide tasks into columns such as "To Do," "In Progress," and "Done." 
+Throughout the project development, I adopted an agile methodology, utilizing Kanban to manage my activities and projects. Kanban provided a clear view of the workflow, allowing me to track task progress visually and in real time. I organized my project on GitHub, using a Kanban board to divide tasks into columns such as "To Do," "In Progress," and "Done."
 
 
-![Starlight website color palette](/static/images/docs/agile.png)
+
+![Starlight Agile development](/static/images/docs/agile.png)
 
 
 For more details on the project management process, you can access the link [here](https://github.com/users/BrunaRihl/projects/6).
@@ -225,7 +227,7 @@ Google Fonts was utilized to incorporate the selected font styles into the websi
 
 I selected 'Montserrat Alternates' for the body text due to its clean and contemporary appearance, enhancing readability across various content sections. As for the logo, I chose 'Mystery Quest' to evoke a sense of mystery and intrigue, aligning with the mystical theme of the website while adding a unique touch to the brand identity.
 
-![Starlight fonts choosen](/static/images/docs/fonts.png)  
+![Starlight fonts](/static/images/docs/fonts.png)  
 
 ### Imagery 
 
@@ -233,7 +235,7 @@ The selected images for the website aim to immerse users in the realm of consult
 
 ### Wireframes
 
-I developed a simple wireframe, aiming to ensure a consistent experience across mobile devices, computers, and tablets.
+I developed a simple wireframe, aiming to ensure a consistent experience across mobile devices and computers.
 
 I made some adjustments in relation to what I had planned for positioning and added some buttons to enhance functionality and user experience, aiming to ensure the website is accessible and enjoyable on any platform.
 
@@ -394,7 +396,7 @@ A website features a custom favicon that has been added to the browser's header.
 ![Starlight book now](/static/images/docs/book-sect.webp)
 
 
-### About: 
+### About page: 
 
 The "About" page provides a detailed insight into the purpose and services available on the site. 
 
@@ -415,7 +417,7 @@ The "About" page provides a detailed insight into the purpose and services avail
 ![Starlight about](/static/images/docs/about-log.webp)
 
 
-### Booking:
+### Booking page:
 
 The Booking section offers users the opportunity to schedule appointments with consultants. This feature is accessible from the navigation bar and is only displayed when the user is logged in. Upon accessing the Appointment page, users are presented with a simple form to schedule their appointments.
 
@@ -437,15 +439,6 @@ The Booking section offers users the opportunity to schedule appointments with c
 
 ![Starlight booking page](/static/images/docs/booking-err.webp)
 
-* Informative Messages: When users perform actions such as updating, creating, or deleting appointments, informative messages are displayed on the appointment list page, confirming the success of the operation or providing feedback in case of errors.
-
-![Starlight booking page](/static/images/docs/book-save.png)
-
-![Starlight booking page](/static/images/docs/delete-mess.webp)
-
-![Starlight booking page](/static/images/docs/edit-mess.webp)
-
-
 * Viewing and Management: Below the scheduling form, a table displays all scheduled appointments, including date, time, and selected service. Users can delete or edit their appointments using the corresponding buttons next to each entry.
 
 ![Starlight booking page](/static/images/docs/bookings.webp)
@@ -456,6 +449,13 @@ The Booking section offers users the opportunity to schedule appointments with c
 
 ![Starlight booking page](/static/images/docs/delete-book.webp)
 
+* Informative Messages: When users perform actions such as updating, creating, or deleting appointments, informative messages are displayed on the appointment list page, confirming the success of the operation or providing feedback in case of errors.
+
+![Starlight booking page](/static/images/docs/book-save.png)
+
+![Starlight booking page](/static/images/docs/delete-mess.webp)
+
+![Starlight booking page](/static/images/docs/edit-mess.webp)
 
 
 ### The footer: 
@@ -471,7 +471,7 @@ The Booking section offers users the opportunity to schedule appointments with c
 
 ### 404 Page:
 
-Developed a custom 404 error page to properly handle situations where users accessed non-existent pages or encountered broken links. This page provides clear navigation options to assist users in returning to the main site.
+A custom 404 error page was developed to properly handle situations where users accessed non-existent pages or encountered broken links. This page provides clear navigation options to assist users in returning to the main site after encountering broken links or non-existent pages.
 
 ![Starlight 404](/static/images/docs/404-page.webp)  
 
@@ -497,7 +497,7 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 
 ## Testing 
 
-### User Story Test Plan: 
+### User Story Test: 
 
 | User Story | Test Scenario | Test Steps | Expected Result | Actual Result |
 |------------|---------------|------------|-----------------|---------------|
@@ -512,14 +512,14 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | View About Page | Access the "About" page | 1. Navigate to the "About" page. 2. Check if relevant information is displayed. | The "About" page displays relevant information about the company, team, services. | Pass |
 | Manage About Page Content | Edit and update the content of the "About" page | 1. Log in as an administrator. 2. Access the administrative interface. 3. Edit the content of the "About" page. | The content of the "About" page is successfully edited and updated. | Pass |
 **`EPIC 4`**
-| Make Online Booking | Make a booking for a service offered on the website | 1. Navigate to the booking section of the website. 2. Select a service and schedule a consultation. | The booking is successfully made for the selected service. | Pass |
-| Manage Bookings | Access the admin dashboard to manage bookings | 1. Log in as an administrator. 2. Access the admin dashboard. 3. Manage bookings (view, edit, delete). | Administrators can efficiently manage bookings from the admin dashboard. | Pass |
+| Make Online Booking | Make a booking for a service offered on the website | 1. Navigate to the booking section of the website. 2. Select a service and schedule a consultation. | The booking is successfully made for the selected service. 3. Manage bookings (view, edit, delete)| Pass |
+| Manage Bookings | Access the admin dashboard to manage bookings | 1. Log in as an administrator. 2. Access the admin dashboard. | Administrators can efficiently manage bookings from the admin dashboard. | Pass |
 **`EPIC 5`**
 | Register Account | Create a new user account | 1. Navigate to the registration page. 2. Fill out the registration form and submit. | A new user account is successfully created. | Pass |
 | User Login | Log in to the user account | 1. Navigate to the login page. 2. Enter valid credentials and log in. | The user is successfully logged in to their account. | Pass |
 | User Logout | Log out of the user account | 1. Click on the logout button. | The user is successfully logged out of their account. | Pass |
 **`EPIC 6`**
-| Website Accessibility | Ensure accessibility features are implemented | 1. Use assistive technologies to navigate the website. 2. Verify if all content is accessible and usable. | The website is accessible and usable for users. | Pass |
+| Website Accessibility | Ensure accessibility features are implemented |1. Utilize Google DevTools to analyze the website's accessibility. 2. Navigate through the website to confirm usability and accessibility for users. | The website is accessible and usable for users. | Pass |
 | Accessible Features | Test the implementation of accessible features | 1. Verify the implementation of accessible features (e.g., alt text for images, contrast colors..). | Accessible features are implemented correctly and enhance user experience. | Pass |
 **`EPIC 7`**
 | README Documentation | Check the README.md file | 1. Read the README.md file. 2. Verify if it contains comprehensive information about the project. | The README.md file provides detailed information about the project's purpose, functionality, and usage. | Pass |
@@ -582,8 +582,8 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | User Login | After entering valid credentials and submitting the login form, the user should be redirected to the homepage and receive a confirmation message indicating successful login. | Entered valid credentials and submitted the login form. | Redirected to the homepage and received confirmation message indicating successful login. | Pass |
 | Authenticated User Menus | When logged in, exclusive menus for authenticated users should appear, and the option to schedule an appointment becomes available. | Logged in with valid credentials and observed the appearance of exclusive menus. | Exclusive menus appeared, and appointment scheduling option became available. | Pass |
 | **`Log Out`** |
-| User Logout | After clicking on the logout button, the user should be redirected to a confirmation page. | Clicked on the logout button and confirmed redirection to the confirmation page. | Redirected to the confirmation page. | Pass |
-| User Logout Redirect | After confirming the logout, the user should be redirected to the home page. | Confirmed logout and checked for redirection to the home page. | Redirected to the home page after logout confirmation. | Pass |
+| User Logout | After clicking on the logout, the user should be redirected to a confirmation page. | Clicked on the logout. | Redirected to the confirmation page. | Pass |
+| User Logout Redirect | After confirming the logout, the user should be redirected to the home page. | Confirmed logout. | Redirected to the home page after logout confirmation. | Pass |
 | **`Booking`** |
 | User able to select the service | User should be able to select the desired service when booking a consultation | Selected the desired service on the booking page | Service selected successfully | Pass |
 | Select the date | User should be able to choose the desired date for the consultation | Selected a date on the booking page | Date was successfully selected | Pass |
@@ -595,14 +595,14 @@ The accessibility, performance, best practices, and SEO (Search Engine Optimizat
 | Delete booking | User should be able to remove their bookings if needed | Attempted to delete a booked consultation | Booking was successfully deleted | Pass |
 | Save booking in booking page | User's bookings should be saved and displayed on the booking page | Scheduled a consultation and checked if it appeared on the booking page | Booking was saved and appeared on the booking page | Pass |
 | **`Home`** |
-| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Book Now" Button | Redirected to the login page. | Pass |
+| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Login First" Button | Redirected to the login page. | Pass |
 | Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass |
 | Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
 | **`About`** |
 | Text Loading  | The text on the "About" page should match the content entered in the admin panel. | Compared displayed text with admin panel content. | Text matched admin panel content. | Pass |
 | Image Upload             | The administrator can successfully upload the image through the administration panel.                 | Verification of the image upload process in the administration panel.     | The correct image is displayed on the website.    | Pass |
 | Updated Date    | Creation date of the text displayed at the bottom of the page. | Checked if the displayed date matches the creation date of the text. | Date displayed matched the creation date of the text. | Pass |
-| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Book Now" Button | Redirected to the login page. | Pass |
+| Button: Non-Logged-in User | "Login First" message appears, indicating the user needs to log in first to book. | Clicked "Login First" Button | Redirected to the login page. | Pass |
 | Button: Logged-in User | "Book Now" button appears, allowing the user to book appointments. | Clicked "Book Now" Button | Redirected to the booking page. | Pass | 
 | Button: hover | When the mouse hovers over the button, it should change color to indicate action. | Hovered over the button and observed the color change. | The button changed color when hovered over, indicating action. | Pass |
 | **`Admin`** |
@@ -980,7 +980,7 @@ MS Paint: used to edit the images.
 
 [Coolors](https://coolors.co/f08080-f4978e-f8ad9d-fbc4ab-ffdab9): utilized to create the color palette. 
 
-[Unsplash](https://unsplash.com/) and [Freepik](https://br.freepik.com/): used to source images for the game website. 
+[Unsplash](https://unsplash.com/) and [Freepik](https://br.freepik.com/): used to source images for the website. 
 
 [Am I Responsive?](https://ui.dev/amiresponsive) and [Morckup Generator](https://techsini.com/multi-mockup/index.php): utilized to view the website's appearance and responsiveness across a range of devices.
 
