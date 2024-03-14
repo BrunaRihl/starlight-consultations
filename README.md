@@ -32,7 +32,7 @@ The live demo is available [here](https://starlight-consultations-2b1105ac431c.h
   * [Accessibility](#accessibility)
 
 * [Testing](#testing)
-  * [User Story Test Plan](#user-story-test-plan)
+  * [User Story Test](#user-story-test)
   * [Tested Browsers and Devices](#tested-browsers-and-devices)
   * [Manual Testing](#manual-testing)
   * [Validator Testing](#validator-testing)
